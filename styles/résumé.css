@@ -1,23 +1,21 @@
-@charset "UTF-8";
-
 .structural⁝grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1em;
-  grid-template-areas: "résumé:header résumé:header"
-                       "résumé:summary résumé:contact";
+  grid-template-areas: "résumé⁝header résumé⁝header"
+                       "résumé⁝summary résumé⁝contact";
 }
 
 #résumé⁝header {
-  grid-area: résumé:header;
+  grid-area: résumé⁝header;
 }
 
 #résumé⁝summary {
-  grid-area: résumé:summary;
+  grid-area: résumé⁝summary;
 }
 
 #résumé⁝contact {
-  grid-area: résumé:contact;
+  grid-area: résumé⁝contact;
 }
 
 /**
