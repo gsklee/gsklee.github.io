@@ -1,4 +1,4 @@
-.structural:grid {
+.structural⁝grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1em;
@@ -6,15 +6,15 @@
                        "résumé:summary résumé:contact";
 }
 
-#résumé:header {
+#résumé⁝header {
   grid-area: résumé:header;
 }
 
-#résumé:summary {
+#résumé⁝summary {
   grid-area: résumé:summary;
 }
 
-#résumé:contact {
+#résumé⁝contact {
   grid-area: résumé:contact;
 }
 
