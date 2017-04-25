@@ -1,3 +1,11 @@
+.structural⋮grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1em;
+  grid-template-areas: "header header"
+                       "summary contact";
+}
+
 #structural⋮grid…header {
   grid-area: header;
 }
@@ -8,14 +16,6 @@
 
 #structural⋮grid…contact {
   grid-area: contact;
-}
-
-.structural⋮grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 1em;
-  grid-template-areas: "header header"
-                       "summary contact";
 }
 
 /**
