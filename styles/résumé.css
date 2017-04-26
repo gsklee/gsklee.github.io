@@ -38,7 +38,8 @@
 }
 
 .presentational｡paper::after {
-  content: "";
+  content: '';
+  
   position: absolute; 
   z-index: -1;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
