@@ -1,4 +1,4 @@
-.structural⋮grid {
+.structural｡grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 1em;
@@ -6,7 +6,7 @@
                        "summary contact";
 }
 
-.presentational⋮paper {
+.presentational｡paper {
   width: 65em;
   padding: 7em 8%;
   box-sizing: border-box;
@@ -26,15 +26,18 @@
   transition: .5s font-size;
 }
 
-#structural⋮grid…header {
+#structural｡grid⟦header⟧ {
   grid-area: header;
 }
 
-#structural⋮grid…summary {
+#structural｡grid⟦header｡profile⟧ {
+}
+
+#structural｡grid⟦summary⟧ {
   grid-area: summary;
 }
 
-#structural⋮grid…contact {
+#structural｡grid⟦contact⟧ {
   grid-area: contact;
 }
 
