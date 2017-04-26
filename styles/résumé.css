@@ -1,10 +1,10 @@
-html {
+.config｡border-box {
   box-sizing: border-box;
 }
 
-*,
-::before,
-::after {
+.config｡border-box *,
+.config｡border-box ::before,
+.config｡border-box ::after {
   box-sizing: inherit;
 }
 
