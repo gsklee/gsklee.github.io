@@ -1,3 +1,7 @@
+:root {
+  --golden-ratio: 1.618;
+}
+
 .config｡vertical-rhythm-guide {
   background: url(https://basehold.it/i/24/454343);
 }
