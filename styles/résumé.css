@@ -1,9 +1,10 @@
 :root {
   --φ: 1.618;
+  --font-size: 81.25%; /* 13px */
 }
 
 .config｡vertical-rhythm-guide {
-  background: url(https://basehold.it/i/24/454343);
+  background: url(https://basehold.it/i/21/454343);
 }
 
 .config｡border-box {
@@ -26,7 +27,7 @@
 
 .presentational｡paper {
   width: 210mm;
-  margin: 1rem auto;
+  margin: calc(var(--φ) * 1rem) auto;
   background: white;
   
   position: relative;
