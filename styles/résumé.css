@@ -12,7 +12,7 @@
   box-sizing: inherit;
 }
 
-// #
+/**/
 
 .structural｡grid {
   display: grid;
@@ -22,7 +22,7 @@
                        "summary contact";
 }
 
-// #
+/**/
 
 .presentational｡paper {
   width: 210mm;
