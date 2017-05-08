@@ -33,7 +33,7 @@
   position: relative;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   
-  font: 100%/1.6 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
+  font: 81.25%/1.618 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -o-hyphens: auto;
@@ -91,7 +91,6 @@ header > ul > li:before {
 * { margin:0; }
 html {
   background: #9BA2B0;
-  font-size: 14px;
 }
 h1, h2 {
   page-break-after: avoid;
