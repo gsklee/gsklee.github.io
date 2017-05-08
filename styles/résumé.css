@@ -91,6 +91,7 @@ header > ul > li:before {
 * { margin:0; }
 html {
   background: #9BA2B0;
+  font-size: 13px;
 }
 h1, h2 {
   page-break-after: avoid;
