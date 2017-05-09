@@ -53,7 +53,7 @@
 */
 
 .presentational｡paper {
-  width: 210mm;
+  width: 61.8vh;
   margin: calc(var(--line-height)) auto;
   background: white;
 
