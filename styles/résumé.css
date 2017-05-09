@@ -4,13 +4,26 @@
   --line-height: var(--φ) * 1rem;
 }
 
+/*
+//  config｡vertical-rhythm
+//  var: --font-size
+*/
+
 .config｡vertical-rhythm {
   font-size: var(--font-size);
 }
 
+/*
+//  config｡vertical-rhythm-guide
+*/
+
 .config｡vertical-rhythm-guide {
   background: url(https://basehold.it/i/21/454343);
 }
+
+/*
+//  config｡border-box
+*/
 
 .config｡border-box {
   box-sizing: border-box;
@@ -22,6 +35,10 @@
   box-sizing: inherit;
 }
 
+/*
+//  structural｡grid
+*/
+
 .structural｡grid { /**/
   display: grid;
   grid-gap: 1em;
@@ -30,14 +47,19 @@
                        "summary contact";
 } /**/
 
+/*
+//  presentational｡paper
+//  var: --line-height
+*/
+
 .presentational｡paper {
   width: 210mm;
   margin: calc(var(--line-height)) auto;
   background: white;
-  
+
   position: relative;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  
+
   font: 81.25%/1.618 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -53,8 +75,8 @@
 
 .presentational｡paper::after {
   content: '';
-  
-  position: absolute; 
+
+  position: absolute;
   z-index: -1;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
   top: 0;
@@ -63,6 +85,10 @@
   right: 10px;
   border-radius: 100px / 10px;
 }
+
+/*
+//  structural｡grid⟦⟧
+*/
 
 #structural｡grid⟦header⟧ {
   grid-area: header;
