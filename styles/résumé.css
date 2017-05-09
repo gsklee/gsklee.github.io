@@ -3,6 +3,10 @@
   --font-size: 81.25%; /* 13px */
 }
 
+.config｡vertical-rhythm {
+  font-size: var(--font-size);
+}
+
 .config｡vertical-rhythm-guide {
   background: url(https://basehold.it/i/21/454343);
 }
@@ -91,7 +95,6 @@ header > ul > li:before {
 * { margin:0; }
 html {
   background: #9BA2B0;
-  font-size: 13px;
 }
 h1, h2 {
   page-break-after: avoid;
