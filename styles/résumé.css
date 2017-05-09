@@ -1,7 +1,7 @@
 :root {
   --φ: 1.618;
   --font-size: 81.25%; /* 13px */
-  --line-height: (var(--φ) * 1rem);
+  --line-height: var(--φ) * 1rem;
 }
 
 .config｡vertical-rhythm {
