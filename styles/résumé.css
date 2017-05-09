@@ -7,6 +7,28 @@
 }
 
 /*
+//  config｡border-box
+*/
+
+.config｡border-box {
+  box-sizing: border-box;
+}
+
+.config｡border-box *,
+.config｡border-box ::before,
+.config｡border-box ::after {
+  box-sizing: inherit;
+}
+
+/*
+//  config｡hyphenation
+*/
+
+.config｡hyphenation {
+  hyphens: auto;
+}
+
+/*
 //  config｡vertical-rhythm
 //  var: --font-size
 */
@@ -21,20 +43,6 @@
 
 .config｡vertical-rhythm-guide {
   background: url(https://basehold.it/i/21/454343);
-}
-
-/*
-//  config｡border-box
-*/
-
-.config｡border-box {
-  box-sizing: border-box;
-}
-
-.config｡border-box *,
-.config｡border-box ::before,
-.config｡border-box ::after {
-  box-sizing: inherit;
 }
 
 /*
@@ -56,23 +64,13 @@
 */
 
 .presentational｡paper {
+  position: relative;
   margin: calc(var(--line-height)) auto;
   background: white;
 
-  position: relative;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 
   font: 100%/1.618 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  -moz-transition: .5s font-size;
-  -ms-transition: .5s font-size;
-  -o-transition: .5s font-size;
-  -webkit-transition: .5s font-size;
-  transition: .5s font-size;
 }
 
 .presentational｡paper::after {
