@@ -1,6 +1,7 @@
 :root {
   --φ: 1.618;
   --font-size: 81.25%; /* 13px */
+  --line-height: (var(--φ) * 1rem);
 }
 
 .config｡vertical-rhythm {
@@ -31,7 +32,7 @@
 
 .presentational｡paper {
   width: 210mm;
-  margin: calc(var(--φ) * 1rem) auto;
+  margin: calc(var(--line-height)) auto;
   background: white;
   
   position: relative;
