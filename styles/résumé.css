@@ -52,10 +52,10 @@
 /*
 //  presentational｡paper
 //  var: --line-height
+//  https://paulund.co.uk/learn-css-box-shadow/
 */
 
 .presentational｡paper {
-  width: 61.8vh;
   margin: calc(var(--line-height)) auto;
   background: white;
 
@@ -77,14 +77,13 @@
 
 .presentational｡paper::after {
   content: '';
-
   position: absolute;
-  z-index: -1;
-  box-shadow: 0 0 20px rgba(0,0,0,0.8);
   top: 0;
   bottom: 0;
   left: 10px;
   right: 10px;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   border-radius: 100px / 10px;
 }
 
@@ -124,6 +123,9 @@ header > ul > li:before {
 * { margin:0; }
 html {
   background: #9BA2B0;
+}
+body {
+  width: 60rem;
 }
 h1, h2 {
   page-break-after: avoid;
