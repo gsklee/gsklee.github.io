@@ -35,8 +35,11 @@
 */
 
 .config｡vertical-rhythm {
-  font-size: 81.25%;
-  line-height: 1.618;
+  font-size: var(--font-size);
+}
+
+.config｡vertical-rhythm body {
+  line-height: calc(var(--line-height));
 }
 
 /*
