@@ -31,10 +31,12 @@
 /*
 //  config｡vertical-rhythm
 //  var: --font-size
+//  var: --line-height
 */
 
 .config｡vertical-rhythm {
   font-size: var(--font-size);
+  line-height: calc(var(--line-height));
 }
 
 /*
