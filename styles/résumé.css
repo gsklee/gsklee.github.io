@@ -100,11 +100,11 @@
 */
 
 #this {
-  background-color: #525659;
+  background-color: white;
 }
 
 #this > .presentational｡paper {
-  width: 60rem;
+  width: calc(100vw / var(--φ));
   font-family: 'EB Garamond', serif;
   hyphens: auto;
 }
