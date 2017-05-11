@@ -22,6 +22,10 @@
   text-decoration: none;
 }
 
+.config｡normalization img {
+  max-width: 100%;
+}
+
 .config｡normalization :focus {
   outline: 1px dotted;
   animation: outline-fade-in 0.75s ease-in-out infinite alternate;
@@ -31,10 +35,6 @@
   0% {
     outline-color: transparent;
   }
-}
-
-.config｡normalization img {
-  max-width: 100%;
 }
 
 /*
