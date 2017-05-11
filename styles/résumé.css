@@ -33,6 +33,10 @@
   }
 }
 
+.config｡normalization img {
+  max-width: 100%;
+}
+
 /*
 //  .config｡border-box
 */
