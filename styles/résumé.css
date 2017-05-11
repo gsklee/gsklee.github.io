@@ -24,6 +24,13 @@
 
 .config｡normalization :focus {
   outline: 1px dotted;
+  animation: fade-in 0.75s ease-in-out infinite alternate;
+}
+
+@keyframes fade-in {
+  0% {
+    outline-color: transparent;
+  }
 }
 
 /*
