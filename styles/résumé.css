@@ -9,6 +9,15 @@
 }
 
 /*
+//  .config｡reset
+*/
+
+.config｡reset * {
+  padding: 0;
+  margin: 0;
+}
+
+/*
 //  .config｡border-box
 */
 
@@ -97,6 +106,7 @@
 
 /*
 //  #this
+//  var: --φ
 */
 
 #this {
@@ -123,7 +133,7 @@ header > ul > li:before {
 /**
  * Style
  */
-* { margin:0; }
+
 h1, h2 {
   page-break-after: avoid;
   margin-bottom: .4em;
