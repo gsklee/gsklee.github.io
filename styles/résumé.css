@@ -9,15 +9,15 @@
 }
 
 /*
-//  .config｡defaults-normalization
+//  .config｡normalization
 */
 
-.config｡defaults-normalization * {
+.config｡normalization * {
   padding: 0;
   margin: 0;
 }
 
-.config｡defaults-normalization a {
+.config｡normalization a {
   color: inherit;
   text-decoration: none;
 }
