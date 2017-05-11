@@ -22,6 +22,10 @@
   text-decoration: none;
 }
 
+.config｡normalization :focus {
+  outline: 1px dotted;
+}
+
 /*
 //  .config｡border-box
 */
