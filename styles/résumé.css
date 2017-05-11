@@ -85,16 +85,31 @@
                        "summary contact";
 } /**/
 
-#structural｡grid⟦header⟧ {
+#grid⟦header⟧ {
   grid-area: header;
 }
 
-#structural｡grid⟦summary⟧ {
+#grid⟦summary⟧ {
   grid-area: summary;
 }
 
-#structural｡grid⟦contact⟧ {
+#grid⟦contact⟧ {
   grid-area: contact;
+}
+
+/*
+//  .structural｡portraiture
+*/
+
+.structural｡portraiture {
+  position: relative;
+}
+
+#grid⟦header⟧｡portraiture⟦1⟧,
+#grid⟦header⟧｡portraiture⟦2⟧ {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*
