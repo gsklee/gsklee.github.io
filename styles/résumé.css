@@ -7,7 +7,7 @@
 }
 
 /*
-//  config｡border-box
+//  .config｡border-box
 */
 
 .config｡border-box {
@@ -21,15 +21,7 @@
 }
 
 /*
-//  config｡hyphenation
-*/
-
-.config｡hyphenation {
-  hyphens: auto;
-}
-
-/*
-//  config｡vertical-rhythm
+//  .config｡vertical-rhythm
 //  var: --font-size
 //  var: --line-height
 */
@@ -38,12 +30,12 @@
   font-size: var(--font-size);
 }
 
-.config｡vertical-rhythm body {
+.config｡vertical-rhythm > body {
   line-height: calc(var(--line-height));
 }
 
 /*
-//  config｡vertical-rhythm-guide
+//  .config｡vertical-rhythm-guide
 */
 
 .config｡vertical-rhythm-guide {
@@ -51,7 +43,7 @@
 }
 
 /*
-//  structural｡grid
+//  .structural｡grid
 */
 
 .structural｡grid { /**/
@@ -78,7 +70,7 @@
 }
 
 /*
-//  presentational｡paper
+//  .presentational｡paper
 //  var: --line-height
 //  https://paulund.co.uk/learn-css-box-shadow/
 */
@@ -101,6 +93,20 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
+/*
+//  #this
+*/
+
+#this {
+  background-color: #9BA2B0;
+}
+
+#this > .presentational｡paper {
+  width: 60rem;
+  font-family: 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
+  hyphens: auto;
+}
+
 /**
  * "Variables"
  */
@@ -116,13 +122,6 @@ header > ul > li:before {
  * Style
  */
 * { margin:0; }
-html {
-  background: #9BA2B0;
-  font-family: 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
-}
-body {
-  width: 60rem;
-}
 h1, h2 {
   page-break-after: avoid;
   margin-bottom: .4em;
