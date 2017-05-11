@@ -9,12 +9,17 @@
 }
 
 /*
-//  .config｡reset
+//  .config｡defaults-normalization
 */
 
-.config｡reset * {
+.config｡defaults-normalization * {
   padding: 0;
   margin: 0;
+}
+
+.config｡defaults-normalization a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*
