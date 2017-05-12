@@ -5,7 +5,7 @@
 :root {
   --φ: 1.618;
   --font-size: 108.33%; /* 17.33px = 13pt */
-  --line-height: var(--φ) * 1rem;
+  --line-height: 1rem * var(--φ);
 }
 
 /*
