@@ -105,8 +105,7 @@
   position: relative;
 }
 
-#grid⟦header⟧｡motion-picture⟦1⟧,
-#grid⟦header⟧｡motion-picture⟦2⟧ {
+.structural｡motion-picture img:not(:first-child) {
   position: absolute;
   top: 0;
   left: 0;
