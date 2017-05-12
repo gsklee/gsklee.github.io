@@ -105,7 +105,7 @@
   position: relative;
 }
 
-.structural｡motion-picture img:not(:first-child) {
+.structural｡motion-picture > :not(:first-child) {
   position: absolute;
   top: 0;
   left: 0;
