@@ -98,15 +98,15 @@
 }
 
 /*
-//  .structural｡portraiture
+//  .structural｡motion-picture
 */
 
-.structural｡portraiture {
+.structural｡motion-picture {
   position: relative;
 }
 
-#grid⟦header⟧｡portraiture⟦1⟧,
-#grid⟦header⟧｡portraiture⟦2⟧ {
+#grid⟦header⟧｡motion-picture⟦1⟧,
+#grid⟦header⟧｡motion-picture⟦2⟧ {
   position: absolute;
   top: 0;
   left: 0;
