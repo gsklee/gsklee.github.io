@@ -85,18 +85,6 @@
                        "summary contact";
 } /**/
 
-#grid⟦header⟧ {
-  grid-area: header;
-}
-
-#grid⟦summary⟧ {
-  grid-area: summary;
-}
-
-#grid⟦contact⟧ {
-  grid-area: contact;
-}
-
 /*
 //  .structural｡motion-picture
 */
@@ -133,6 +121,40 @@
   z-index: -1;
   border-radius: 100px / 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/*
+//  #grid
+*/
+
+#grid⟦header⟧ {
+  grid-area: header;
+}
+
+#grid⟦summary⟧ {
+  grid-area: summary;
+}
+
+#grid⟦contact⟧ {
+  grid-area: contact;
+}
+
+/*
+//  #grid⟦header⟧｡motion-picture
+*/
+
+#grid⟦header⟧｡motion-picture⟦1⟧ {
+  animation: opacity-fade-in calc(1s / 6) linear calc(-1s / 6) infinite alternate;
+}
+
+#grid⟦header⟧｡motion-picture⟦2⟧ {
+  animation: opacity-fade-in calc(1s / 6) linear infinite alternate;
+}
+
+@keyframes opacity-fade-in {
+  0% {
+    opacity: 0;
+  }
 }
 
 /*
