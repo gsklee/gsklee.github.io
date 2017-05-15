@@ -97,6 +97,7 @@
 
 .structural｡positionee {
   position: absolute;
+  z-index: 1;
 }
 
 /*
@@ -138,6 +139,21 @@ figure.structural｡motion-picture > img:not(:first-child) {
 }
 
 /*
+//  #this
+//  var: --φ
+*/
+
+#this {
+  background-color: white;
+}
+
+#this > .presentational｡paper {
+  width: calc(100vw / var(--φ));
+  font-family: 'EB Garamond', serif;
+  hyphens: auto;
+}
+
+/*
 //  #grid
 */
 
@@ -154,8 +170,16 @@ figure.structural｡motion-picture > img:not(:first-child) {
 }
 
 /*
-//  #grid⟦header⟧｡motion-picture
+//  #grid⟦header⟧
 */
+
+#grid⟦header⟧⟦heading⟧ {
+  right: 0;
+  bottom: 0;
+}
+
+#grid⟦header⟧⟦subheading⟧ {
+}
 
 #grid⟦header⟧｡motion-picture⟦1⟧ {
   animation: opacity-fade-in calc(1s / 6) linear calc(-1s / 6) infinite alternate;
@@ -169,21 +193,6 @@ figure.structural｡motion-picture > img:not(:first-child) {
   0% {
     opacity: 0;
   }
-}
-
-/*
-//  #this
-//  var: --φ
-*/
-
-#this {
-  background-color: white;
-}
-
-#this > .presentational｡paper {
-  width: calc(100vw / var(--φ));
-  font-family: 'EB Garamond', serif;
-  hyphens: auto;
 }
 
 /**
