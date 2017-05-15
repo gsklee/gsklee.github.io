@@ -87,14 +87,14 @@
 } /**/
 
 /*
-//  .structural｡x
+//  .structural｡positioner & .structural｡positionee
 */
 
-.structural｡x {
+.structural｡positioner {
   position: relative;
 }
 
-.structural｡x-unit {
+.structural｡positionee {
   position: absolute;
 }
 
