@@ -16,6 +16,7 @@
 .config｡normalization * {
   padding: 0;
   margin: 0;
+  transition: 0.25s;
 }
 
 .config｡normalization a {
