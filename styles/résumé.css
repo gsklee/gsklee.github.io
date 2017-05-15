@@ -108,6 +108,10 @@ figure.structural｡motion-picture {
   position: relative;
 }
 
+figure.structural｡motion-picture > img:first-child {
+  display: block; /* https://goo.gl/qXVGmf */
+}
+
 figure.structural｡motion-picture > img:not(:first-child) {
   position: absolute;
   top: 0;
