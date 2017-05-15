@@ -13,21 +13,21 @@
 //  .config｡normalization
 */
 
-html.config｡normalization * {
+.config｡normalization * {
   padding: 0;
   margin: 0;
 }
 
-html.config｡normalization a {
+.config｡normalization a {
   color: inherit;
   text-decoration: none;
 }
 
-html.config｡normalization img {
+.config｡normalization img {
   max-width: 100%;
 }
 
-html.config｡normalization :focus {
+.config｡normalization :focus {
   outline: 1px dotted;
   animation: outline-fade-in 0.75s ease-in-out infinite alternate;
 }
@@ -42,13 +42,13 @@ html.config｡normalization :focus {
 //  .config｡border-box
 */
 
-html.config｡border-box {
+.config｡border-box {
   box-sizing: border-box;
 }
 
-html.config｡border-box *,
-html.config｡border-box ::before,
-html.config｡border-box ::after {
+.config｡border-box *,
+.config｡border-box ::before,
+.config｡border-box ::after {
   box-sizing: inherit;
 }
 
@@ -58,11 +58,11 @@ html.config｡border-box ::after {
 //  var: --line-height
 */
 
-html.config｡vertical-rhythm {
+.config｡vertical-rhythm {
   font-size: var(--font-size);
 }
 
-html.config｡vertical-rhythm > body {
+.config｡vertical-rhythm > body {
   line-height: calc(var(--line-height));
 }
 
@@ -70,7 +70,7 @@ html.config｡vertical-rhythm > body {
 //  .config｡vertical-rhythm-guide
 */
 
-html.config｡vertical-rhythm-guide {
+.config｡vertical-rhythm-guide {
   background-image: url(https://basehold.it/i/28/454343); /* 28px = 21pt */
 }
 
