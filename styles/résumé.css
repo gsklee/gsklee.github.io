@@ -123,7 +123,7 @@ figure.structural｡motion-picture > img:not(:first-child) {
 .presentational｡paper {
   position: relative;
   margin: calc(var(--line-height)) auto;
-  background: white;
+  background-color: white;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -149,7 +149,7 @@ figure.structural｡motion-picture > img:not(:first-child) {
 
 #this > .presentational｡paper {
   width: calc(100vw / var(--φ));
-  font-family: 'EB Garamond', serif;
+  font-family: 'Alegreya', serif;
   hyphens: auto;
 }
 
@@ -176,6 +176,8 @@ figure.structural｡motion-picture > img:not(:first-child) {
 #grid⟦header⟧⟦heading⟧ {
   right: 0;
   bottom: 0;
+  font-family: 'EB Garamond', serif;
+  background-color: white;
 }
 
 #grid⟦header⟧⟦subheading⟧ {
@@ -195,35 +197,17 @@ figure.structural｡motion-picture > img:not(:first-child) {
   }
 }
 
-/**
- * "Variables"
- */
-h1, h2, .date {
-  font: small-caps normal 100% Constantia, 'Palatino Linotype', Palatino, Georgia, serif;
-}
-h1,
-header > h1 > span,
-header > ul > li:before {
-  color: #9BBB59;
-}
-/**
- * Style
- */
 
-h1, h2 {
-  page-break-after: avoid;
-  margin-bottom: .4em;
-}
-h1 {
-  margin-top: 1.2em;
-  font-size: 200%;
-}
-h2 {
-  margin-top: 1em;
-  font-size: 150%;
-  color: hsl(20, 15%, 50%);
-  font-weight: bold;
-}
+
+
+
+
+
+/**
+* Style
+*/
+
+
 a {
   color:#4F6128;
   text-decoration-skip: ink;
@@ -235,10 +219,7 @@ abbr[title] {
 p {
   margin: .6em 0;
 }
-h1 + p,
-h2 + p {
-  margin-top: 0;
-}
+
 ul {
   padding: 0;
   list-style: square;
@@ -246,39 +227,7 @@ ul {
 ul ul {
   padding-left: 3em;
 }
-header {
-  text-align: center;
-}
-header > h1 {
-  color: #7F7F7F;
-  color: hsl(20, 15%, 50%);
-  border-bottom: 1px solid #9BBB59;
-  margin: 0 0 .15em;
-  text-indent: 1.2em;
-  font-size: 450%;
-  line-height: 1.05;
-  font-variant: normal;
-}
-header > h1 > span {
-  display: inline-block;
-  margin-left: -2.7em;
-  vertical-align: super;
-  font-size: 50%;
-}
-header > ul {
-  display: block;
-  margin-bottom: .5em;
-}
-header > ul > li {
-  display: inline;
-  list-style: none;
-}
-header > ul > li:before {
-  content: '● ';
-}
-header > ul > li:first-child:before {
-  content: none;
-}
+
 address {
   font-style: normal;
 }
@@ -331,36 +280,4 @@ footer {
 }
 #projects .timeline li p:nth-of-type(2) a:first-of-type {
   font-weight: bold;
-}
-@media (max-width:950px) {
-  html { font-size: 12px; }
-}
-@media (max-width:700px) {
-  html { font-size: 11px; }
-}
-@media (max-width:600px) {
-  body {
-    width: auto;
-    margin: 1em;
-  }
-}
-@media print {
-  @page {
-    size: letter;
-    margin: 2cm 2.5cm;
-  }
-  html {
-    background: none;
-    font-size: 12pt;
-  }
-  body {
-    box-shadow: none;
-    padding: 0;
-  }
-  section > h1 {
-    box-shadow: calc(-8vw + 2em) 0 white, calc(-8vw - .1em) 0 0 -.1em;
-  }
-  footer {
-    display: none;
-  }
 }
