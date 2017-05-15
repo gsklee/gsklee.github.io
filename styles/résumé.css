@@ -13,21 +13,21 @@
 //  .config｡normalization
 */
 
-.config｡normalization * {
+html.config｡normalization * {
   padding: 0;
   margin: 0;
 }
 
-.config｡normalization a {
+html.config｡normalization a {
   color: inherit;
   text-decoration: none;
 }
 
-.config｡normalization img {
+html.config｡normalization img {
   max-width: 100%;
 }
 
-.config｡normalization :focus {
+html.config｡normalization :focus {
   outline: 1px dotted;
   animation: outline-fade-in 0.75s ease-in-out infinite alternate;
 }
@@ -42,13 +42,13 @@
 //  .config｡border-box
 */
 
-.config｡border-box {
+html.config｡border-box {
   box-sizing: border-box;
 }
 
-.config｡border-box *,
-.config｡border-box ::before,
-.config｡border-box ::after {
+html.config｡border-box *,
+html.config｡border-box ::before,
+html.config｡border-box ::after {
   box-sizing: inherit;
 }
 
@@ -58,11 +58,11 @@
 //  var: --line-height
 */
 
-.config｡vertical-rhythm {
+html.config｡vertical-rhythm {
   font-size: var(--font-size);
 }
 
-.config｡vertical-rhythm > body {
+html.config｡vertical-rhythm > body {
   line-height: calc(var(--line-height));
 }
 
@@ -70,7 +70,7 @@
 //  .config｡vertical-rhythm-guide
 */
 
-.config｡vertical-rhythm-guide {
+html.config｡vertical-rhythm-guide {
   background-image: url(https://basehold.it/i/28/454343); /* 28px = 21pt */
 }
 
@@ -102,11 +102,11 @@
 //  .structural｡motion-picture
 */
 
-.structural｡motion-picture {
+figure.structural｡motion-picture {
   position: relative;
 }
 
-.structural｡motion-picture > :not(:first-child) {
+figure.structural｡motion-picture > img:not(:first-child) {
   position: absolute;
   top: 0;
   left: 0;
