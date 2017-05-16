@@ -91,7 +91,6 @@
 
 .structural｡grid { /**/
   display: grid;
-  grid-gap: 1em;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "header header"
                        "summary contact";
@@ -166,6 +165,10 @@ figure.structural｡motion-picture > img:not(:first-child) {
   background: url(/images/backdrop.jpg) 60% / cover fixed;
   font-family: 'Alegreya', serif;
   hyphens: auto;
+}
+
+#this.config｡vertical-rhythm-guide {
+  background-position: 0 -9px;
 }
 
 #this > .presentational｡paper {
@@ -280,9 +283,6 @@ ul ul {
 
 address {
   font-style: normal;
-}
-section > h1 {
-  box-shadow: calc(-8vw + .6em) 0 white, calc(-8vw - .1em) 0 0 -.1em;
 }
 li {
   page-break-inside: avoid;
