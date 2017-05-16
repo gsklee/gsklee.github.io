@@ -54,6 +54,22 @@
 }
 
 /*
+//  .config｡modular-scale
+*/
+
+.config｡modular-scale h1 {
+  font-size: calc(var(--font-size) * var(--φ) * var(--φ) * var(--φ));
+}
+
+.config｡modular-scale h2 {
+  font-size: calc(var(--font-size) * var(--φ) * var(--φ));
+}
+
+.config｡modular-scale h3 {
+  font-size: calc(var(--font-size) * var(--φ));
+}
+
+/*
 //  .config｡vertical-rhythm
 //  var: --font-size
 //  var: --line-height
@@ -188,16 +204,18 @@ figure.structural｡motion-picture > img:not(:first-child) {
 #grid⟦header⟧⟦subheading⟧ {
 }
 
+/*
+//  #grid⟦header⟧⟦portraiture⟧
+//  var: --φ
+*/
+
 #grid⟦header⟧⟦portraiture⟧ {
   height: calc(100vw / var(--φ) / var(--φ));
 }
 
 #grid⟦header⟧⟦portraiture⟧ > img {
-  top: -12%;
-}
-
-#grid⟦header⟧⟦portraiture⟧⟦0⟧ {
   position: absolute;
+  top: -12%;
 }
 
 #grid⟦header⟧⟦portraiture⟧⟦1⟧ {
