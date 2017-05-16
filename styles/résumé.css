@@ -163,12 +163,12 @@ figure.structural｡motion-picture > img:not(:first-child) {
 
 #this {
   background: url(/images/backdrop.jpg) 60% / cover fixed;
+  font-family: 'Alegreya', serif;
+  hyphens: auto;
 }
 
 #this > .presentational｡paper {
   width: calc(100vw / var(--φ));
-  font-family: 'Alegreya', serif;
-  hyphens: auto;
 }
 
 #this > body > header > h1 {
@@ -177,6 +177,7 @@ figure.structural｡motion-picture > img:not(:first-child) {
 
 #this > body > header > .structural｡subheading {
   font-size: calc(var(--font-size-♯♯));
+  margin: calc((var(--line-height) * 2 - var(--font-size-♯♯)) / 2) 0;
 }
 
 #this > body > section > h1 {
