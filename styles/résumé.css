@@ -10,6 +10,16 @@
 }
 
 /*
+//  .config｡modular-scale
+*/
+
+.config｡modular-scale {
+  --font-size-♯: var(--font-size) * var(--φ);
+  --font-size-♯♯: var(--font-size) * var(--φ) * var(--φ);
+  --font-size-♯♯♯: var(--font-size) * var(--φ) * var(--φ) * var(--φ);
+}
+
+/*
 //  .config｡normalization
 */
 
@@ -51,22 +61,6 @@
 .config｡border-box ::before,
 .config｡border-box ::after {
   box-sizing: inherit;
-}
-
-/*
-//  .config｡modular-scale
-*/
-
-.config｡modular-scale h1 {
-  font-size: calc(var(--font-size) * var(--φ) * var(--φ) * var(--φ));
-}
-
-.config｡modular-scale h2 {
-  font-size: calc(var(--font-size) * var(--φ) * var(--φ));
-}
-
-.config｡modular-scale h3 {
-  font-size: calc(var(--font-size) * var(--φ));
 }
 
 /*
@@ -162,6 +156,9 @@ figure.structural｡motion-picture > img:not(:first-child) {
 /*
 //  #this
 //  var: --φ
+//  var: --font-size-♯
+//  var: --font-size-♯♯
+//  var: --font-size-♯♯♯
 */
 
 #this {
@@ -172,6 +169,18 @@ figure.structural｡motion-picture > img:not(:first-child) {
   width: calc(100vw / var(--φ));
   font-family: 'Alegreya', serif;
   hyphens: auto;
+}
+
+#this > body > header > h1 {
+  font-size: calc(var(--font-size-♯♯♯));
+}
+
+#this > body > header > .structural｡subheading {
+  font-size: calc(var(--font-size-♯♯));
+}
+
+#this > body > section > h1 {
+  font-size: calc(var(--font-size-♯));
 }
 
 /*
