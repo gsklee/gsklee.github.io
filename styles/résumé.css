@@ -211,14 +211,16 @@ figure.structural｡motion-picture > img:not(:first-child) {
 */
 
 #grid⟦header⟧⟦heading⟧ {
-  right: calc(var(--line-height));
-  bottom: calc(var(--line-height) * 4);
+  right: calc(var(--line-height) /2);
+  bottom: calc(var(--line-height) * 3.5);
+  padding: calc(var(--line-height) / 2);
   background-color: white;
 }
 
 #grid⟦header⟧⟦subheading⟧ {
-  right: calc(var(--line-height));
-  bottom: calc(var(--line-height));
+  right: calc(var(--line-height) / 2);
+  bottom: calc(var(--line-height) / 2);
+  padding: calc(var(--line-height) / 2);
   background-color: white;
 }
 
