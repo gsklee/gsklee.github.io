@@ -106,6 +106,7 @@
 
 figure.structural｡motion-picture {
   position: relative;
+  overflow: hidden;
 }
 
 figure.structural｡motion-picture > img:first-child {
@@ -187,11 +188,23 @@ figure.structural｡motion-picture > img:not(:first-child) {
 #grid⟦header⟧⟦subheading⟧ {
 }
 
-#grid⟦header⟧｡motion-picture⟦1⟧ {
+#grid⟦header⟧⟦portraiture⟧ {
+  height: calc(100vw / var(--φ) / var(--φ));
+}
+
+#grid⟦header⟧⟦portraiture⟧ > img {
+  top: -12%;
+}
+
+#grid⟦header⟧⟦portraiture⟧⟦0⟧ {
+  position: absolute;
+}
+
+#grid⟦header⟧⟦portraiture⟧⟦1⟧ {
   animation: opacity-fade-in calc(1s / 6) linear calc(-1s / 6) infinite alternate;
 }
 
-#grid⟦header⟧｡motion-picture⟦2⟧ {
+#grid⟦header⟧⟦portraiture⟧⟦2⟧ {
   animation: opacity-fade-in calc(1s / 6) linear infinite alternate;
 }
 
