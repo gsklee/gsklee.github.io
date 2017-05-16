@@ -149,7 +149,7 @@ figure.structural｡motion-picture > img:not(:first-child) {
 */
 
 #this {
-  background-image: url(/images/backdrop.jpg);
+  background: url(/images/backdrop.jpg) 60% / cover fixed;
 }
 
 #this > .presentational｡paper {
