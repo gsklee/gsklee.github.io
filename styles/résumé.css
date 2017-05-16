@@ -149,7 +149,7 @@ figure.structural｡motion-picture > img:not(:first-child) {
 */
 
 #this {
-  background-color: white;
+  background-image: url(/images/backdrop.jpg);
 }
 
 #this > .presentational｡paper {
