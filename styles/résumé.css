@@ -156,6 +156,7 @@ figure.structural｡motion-picture > img:not(:first-child) {
 /*
 //  #this
 //  var: --φ
+//  var: --line-height
 //  var: --font-size-♯
 //  var: --font-size-♯♯
 //  var: --font-size-♯♯♯
@@ -173,11 +174,12 @@ figure.structural｡motion-picture > img:not(:first-child) {
 
 #this > body > header > h1 {
   font-size: calc(var(--font-size-♯♯♯));
+  line-height: calc(var(--line-height) * 3);
 }
 
 #this > body > header > .structural｡subheading {
   font-size: calc(var(--font-size-♯♯));
-  margin: calc((var(--line-height) * 2 - var(--font-size-♯♯)) / 2) 0;
+  line-height: calc(var(--line-height) * 2);
 }
 
 #this > body > section > h1 {
@@ -190,6 +192,7 @@ figure.structural｡motion-picture > img:not(:first-child) {
 
 #grid⟦header⟧ {
   grid-area: header;
+  font-family: 'EB Garamond', serif;
 }
 
 #grid⟦summary⟧ {
@@ -205,13 +208,15 @@ figure.structural｡motion-picture > img:not(:first-child) {
 */
 
 #grid⟦header⟧⟦heading⟧ {
-  right: 0;
-  bottom: 0;
-  font-family: 'EB Garamond', serif;
+  right: calc(var(--line-height));
+  bottom: calc(var(--line-height) * 4);
   background-color: white;
 }
 
 #grid⟦header⟧⟦subheading⟧ {
+  right: calc(var(--line-height));
+  bottom: calc(var(--line-height));
+  background-color: white;
 }
 
 /*
