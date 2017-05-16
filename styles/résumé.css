@@ -5,7 +5,7 @@
 
 :root {
   --φ: 1.618;
-  --font-size: 108.33%; /* 17.33px = 13pt */
+  --font-size-♮: 108.33%; /* 17.33px = 13pt */
   --line-height: 1rem * var(--φ);
 }
 
@@ -14,9 +14,9 @@
 */
 
 .config｡modular-scale {
-  --font-size-♯: var(--font-size) * var(--φ);
-  --font-size-♯♯: var(--font-size) * var(--φ) * var(--φ);
-  --font-size-♯♯♯: var(--font-size) * var(--φ) * var(--φ) * var(--φ);
+  --font-size-♯: 1rem * var(--φ);
+  --font-size-♯♯: 1rem * var(--φ) * var(--φ);
+  --font-size-♯♯♯: 1rem * var(--φ) * var(--φ) * var(--φ);
 }
 
 /*
@@ -65,12 +65,12 @@
 
 /*
 //  .config｡vertical-rhythm
-//  var: --font-size
+//  var: --font-size-♮
 //  var: --line-height
 */
 
 .config｡vertical-rhythm {
-  font-size: var(--font-size);
+  font-size: var(--font-size-♮);
 }
 
 .config｡vertical-rhythm > body {
