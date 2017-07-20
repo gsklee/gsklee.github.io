@@ -3,14 +3,21 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 @import url(https://fonts.googleapis.com/css?family=Alegreya:400,400i);
 
+/*
+// :root
+// () => (--φ, --font-size-♮, --line-height, --vertical-rhythm-guide-url)
+*/
+
 :root {
   --φ: 1.618;
   --font-size-♮: 108.33%; /* 17.33px = 13pt */
   --line-height: 1rem * var(--φ); /* 28px = 21pt */
+  --vertical-rhythm-guide-url: url(https://basehold.it/i/28/454343);
 }
 
 /*
-//  .config｡modular-scale
+// .config｡modular-scale
+// (--φ) => (--font-size-♯, --font-size-♯♯, --font-size-♯♯♯)
 */
 
 .config｡modular-scale {
@@ -20,12 +27,12 @@
 }
 
 /*
-//  .config｡normalization
+// .config｡normalization
 */
 
 .config｡normalization * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   transition: 0.25s;
 }
 
@@ -39,7 +46,7 @@
 }
 
 .config｡normalization :focus {
-  outline: 1px dotted;
+  outline: 2px dotted;
   animation: outline-fade-in 0.75s ease-in-out infinite alternate;
 }
 
@@ -50,7 +57,7 @@
 }
 
 /*
-//  .config｡border-box
+// .config｡border-box
 */
 
 .config｡border-box {
@@ -64,9 +71,8 @@
 }
 
 /*
-//  .config｡vertical-rhythm
-//  var: --font-size-♮
-//  var: --line-height
+// .config｡vertical-rhythm
+// (--font-size-♮, --line-height) => ()
 */
 
 .config｡vertical-rhythm {
@@ -78,15 +84,16 @@
 }
 
 /*
-//  .config｡vertical-rhythm-guide
+// .config｡vertical-rhythm-guide
+// (--vertical-rhythm-guide-url) => ()
 */
 
 .config｡vertical-rhythm-guide {
-  background-image: url(https://basehold.it/i/28/454343);
+  background-image: var(--vertical-rhythm-guide-url);
 }
 
 /*
-//  .structural｡grid
+// .structural｡grid
 */
 
 .structural｡grid { /**/
@@ -97,7 +104,7 @@
 } /**/
 
 /*
-//  .structural｡positioner & .structural｡positionee
+// .structural｡positioner & .structural｡positionee
 */
 
 .structural｡positioner {
@@ -110,28 +117,9 @@
 }
 
 /*
-//  .structural｡motion-picture
-*/
-
-figure.structural｡motion-picture {
-  position: relative;
-  overflow: hidden;
-}
-
-figure.structural｡motion-picture > img:first-child {
-  display: block; /* https://goo.gl/qXVGmf */
-}
-
-figure.structural｡motion-picture > img:not(:first-child) {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/*
-//  .presentational｡paper
-//  var: --line-height
-//  https://paulund.co.uk/learn-css-box-shadow/
+// .presentational｡paper
+// (--line-height) => ()
+// https://paulund.co.uk/learn-css-box-shadow/
 */
 
 .presentational｡paper {
@@ -142,7 +130,7 @@ figure.structural｡motion-picture > img:not(:first-child) {
 }
 
 .presentational｡paper::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 10px;
   right: 10px;
