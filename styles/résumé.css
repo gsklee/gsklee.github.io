@@ -6,7 +6,7 @@
 :root {
   --φ: 1.618;
   --font-size-♮: 108.33%; /* 17.33px = 13pt */
-  --line-height: 1rem * var(--φ);
+  --line-height: 1rem * var(--φ); /* 28px = 21pt */
 }
 
 /*
@@ -82,7 +82,7 @@
 */
 
 .config｡vertical-rhythm-guide {
-  background-image: url(https://basehold.it/i/28/454343); /* 28px = 21pt */
+  background-image: url(https://basehold.it/i/28/454343);
 }
 
 /*
