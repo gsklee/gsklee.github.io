@@ -132,10 +132,10 @@
 .presentational｡paper::after {
   content: "";
   position: absolute;
+  z-index: -1;
   left: 10px;
   right: 10px;
   height: 100%;
-  z-index: -1;
   border-radius: 100px / 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
