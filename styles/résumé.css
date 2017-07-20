@@ -141,16 +141,11 @@
 }
 
 /*
-//  #this
-//  var: --φ
-//  var: --line-height
-//  var: --font-size-♯
-//  var: --font-size-♯♯
-//  var: --font-size-♯♯♯
+// #this
+// (--φ, --line-height, --font-size-♯, --font-size-♯♯, --font-size-♯♯♯) => ()
 */
 
 #this {
-  background: url(/images/backdrop.jpg) 60% / cover fixed;
   font-family: 'Alegreya', serif;
   hyphens: auto;
 }
