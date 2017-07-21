@@ -93,10 +93,10 @@
 }
 
 /*
-// .structural｡grid
+// .｡｡｡grid
 */
 
-.structural｡grid { /**/
+.｡｡｡grid { /**/
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "header header"
@@ -104,32 +104,32 @@
 } /**/
 
 /*
-// .structural｡positioner & .structural｡positionee
+// .component｡structural｡positioner & .component｡structural｡positionee
 */
 
-.structural｡positioner {
+.component｡structural｡positioner {
   position: relative;
 }
 
-.structural｡positionee {
+.component｡structural｡positionee {
   position: absolute;
   z-index: 1;
 }
 
 /*
-// .presentational｡paper
+// .component｡visual｡paper
 // (--line-height) => ()
 // https://paulund.co.uk/learn-css-box-shadow/
 */
 
-.presentational｡paper {
+.component｡visual｡paper {
   position: relative;
   margin: calc(var(--line-height)) auto;
   background-color: white;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.presentational｡paper::after {
+.component｡visual｡paper::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -150,21 +150,21 @@
   hyphens: auto;
 }
 
-#this > .presentational｡paper {
+#this.component｡visual｡paper {
   width: calc(100vw / var(--φ));
 }
 
-#this > body > header > h1 {
+#this > header > h1 {
   font-size: calc(var(--font-size-♯♯♯));
   line-height: calc(var(--line-height) * 3);
 }
 
-#this > body > header > .structural｡subheading {
+#this > header > .component｡structural｡subheading {
   font-size: calc(var(--font-size-♯♯));
   line-height: calc(var(--line-height) * 2);
 }
 
-#this > body > section > h1 {
+#this > section > h1 {
   font-size: calc(var(--font-size-♯));
 }
 
@@ -172,16 +172,16 @@
 //  #grid...
 */
 
-#grid⟦header⟧ {
+#this⟦header⟧ {
   grid-area: header;
   font-family: 'EB Garamond', serif;
 }
 
-#grid⟦summary⟧ {
+#this⟦summary⟧ {
   grid-area: summary;
 }
 
-#grid⟦contact⟧ {
+#this⟦contact⟧ {
   grid-area: contact;
 }
 
@@ -189,14 +189,14 @@
 //  #grid⟦header⟧
 */
 
-#grid⟦header⟧⟦heading⟧ {
+#this⟦header⟧⟦heading⟧ {
   right: calc(var(--line-height) /2);
   bottom: calc(var(--line-height) * 3.5);
   padding: calc(var(--line-height) / 2);
   background-color: white;
 }
 
-#grid⟦header⟧⟦subheading⟧ {
+#this⟦header⟧⟦subheading⟧ {
   right: calc(var(--line-height) / 2);
   bottom: calc(var(--line-height) / 2);
   padding: calc(var(--line-height) / 2);
@@ -208,28 +208,10 @@
 //  var: --φ
 */
 
-#grid⟦header⟧⟦portraiture⟧ {
+#this⟦header⟧⟦portraiture⟧ {
   height: calc(100vw / var(--φ) / var(--φ));
 }
 
-#grid⟦header⟧⟦portraiture⟧ > img {
-  position: absolute;
-  top: -12%;
-}
-
-#grid⟦header⟧⟦portraiture⟧⟦1⟧ {
-  animation: opacity-fade-in calc(1s / 6) linear calc(-1s / 6) infinite alternate;
-}
-
-#grid⟦header⟧⟦portraiture⟧⟦2⟧ {
-  animation: opacity-fade-in calc(1s / 6) linear infinite alternate;
-}
-
-@keyframes opacity-fade-in {
-  0% {
-    opacity: 0;
-  }
-}
 
 
 
