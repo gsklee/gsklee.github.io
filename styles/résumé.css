@@ -150,10 +150,6 @@
   hyphens: auto;
 }
 
-#this.config｡vertical-rhythm-guide {
-  background-position: 0 -9px;
-}
-
 #this > .presentational｡paper {
   width: calc(100vw / var(--φ));
 }
@@ -173,7 +169,7 @@
 }
 
 /*
-//  #grid
+//  #grid...
 */
 
 #grid⟦header⟧ {
