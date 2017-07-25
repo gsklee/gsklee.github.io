@@ -178,6 +178,7 @@
 }
 
 #this > header > .component｡structural｡subheading {
+  font-family: 'EB Garamond', serif;
   font-size: calc(var(--font-size-♯♯));
   line-height: calc(var(--line-height-♯♯));
 }
@@ -233,20 +234,14 @@
 // (--line-height) => ()
 */
 
-/*???*/
 #this⟦header⟧⟦heading⟧ {
-  right: calc(var(--line-height) /2);
-  bottom: calc(var(--line-height) * 3.5);
-  padding: calc(var(--line-height) / 2);
-  background-color: white;
+  left: 0;
+  bottom: calc(var(--line-height) * 2.5);
 }
 
-/*???*/
 #this⟦header⟧⟦subheading⟧ {
-  right: calc(var(--line-height) / 2);
-  bottom: calc(var(--line-height) / 2);
-  padding: calc(var(--line-height) / 2);
-  background-color: white;
+  left: 0;
+  bottom: calc(var(--line-height));
 }
 
 #this⟦header⟧⟦portraiture⟧ {
@@ -254,7 +249,7 @@
   z-index: 0;
   object-fit: cover;
   object-position: -3px 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 60% 70%, 0 70%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 60% calc(100% - var(--line-height) * 7), 0 calc(100% - var(--line-height) * 7));
 }
 
 
