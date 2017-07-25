@@ -179,8 +179,8 @@
 
 #this > header > .component｡structural｡subheading {
   font-family: 'EB Garamond', serif;
-  font-size: calc(var(--font-size-♯♯));
-  line-height: calc(var(--line-height-♯♯));
+  font-size: calc(var(--font-size-♯));
+  line-height: calc(var(--line-height-♯));
   opacity: 0.25;
 }
 
