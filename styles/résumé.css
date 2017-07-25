@@ -232,7 +232,7 @@
 
 /*
 // #this⟦header⟧
-// (--line-height) => ()
+// (--φ, --line-height) => ()
 */
 
 #this⟦header⟧⟦heading⟧ {
@@ -246,11 +246,16 @@
 }
 
 #this⟦header⟧⟦portraiture⟧ {
-  height: 100%;
+  height: 102%;
   z-index: 0;
   object-fit: cover;
   object-position: -3px 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, calc(100vw / var(--φ) / var(--φ)) 100%, calc(100vw / var(--φ) / var(--φ)) calc(100% - var(--line-height) * 7.5), 0 calc(100% - var(--line-height) * 7.5));
+  clip-path: polygon(0 0,
+                     100% 0,
+                     100% calc(100vw / var(--φ) / var(--φ)),
+                     calc(100vw / var(--φ) / var(--φ)) calc(100vw / var(--φ) / var(--φ)),
+                     calc(100vw / var(--φ) / var(--φ)) calc(100vw / var(--φ) / var(--φ) / var(--φ)),
+                     0 calc(100vw / var(--φ) / var(--φ) / var(--φ));
 }
 
 
