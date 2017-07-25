@@ -147,7 +147,7 @@
 
 /*
 // #this
-// (--φ, --font-size-♯, --line-height-♯, --font-size-♯♯, --line-height-♯♯, --font-size-♯♯♯♯, --line-height-♯♯♯♯) => ()
+// (--φ, --font-size-♯, --line-height-♯, --font-size-♯♯♯, --line-height-♯♯♯) => ()
 */
 
 /*???*/
@@ -255,9 +255,8 @@
                      100% calc(100vw / var(--φ) / var(--φ)),
                      calc(100vw / var(--φ) / var(--φ)) calc(100vw / var(--φ) / var(--φ)),
                      calc(100vw / var(--φ) / var(--φ)) calc(100vw / var(--φ) / var(--φ) / var(--φ)),
-                     0 calc(100vw / var(--φ) / var(--φ) / var(--φ));
+                     0 calc(100vw / var(--φ) / var(--φ) / var(--φ)));
 }
-
 
 
 
