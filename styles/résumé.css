@@ -181,6 +181,7 @@
   font-family: 'EB Garamond', serif;
   font-size: calc(var(--font-size-♯♯));
   line-height: calc(var(--line-height-♯♯));
+  opacity: 0.25;
 }
 
 #this > section > h1 {
@@ -235,13 +236,13 @@
 */
 
 #this⟦header⟧⟦heading⟧ {
-  left: 0;
-  bottom: calc(var(--line-height) * 2.5);
+  left: calc(var(--line-height) * 2);
+  bottom: calc(var(--line-height) * 1.5);
 }
 
 #this⟦header⟧⟦subheading⟧ {
-  left: 0;
-  bottom: calc(var(--line-height));
+  left: calc(var(--line-height) * 2);
+  bottom: calc(var(--line-height) * 0.5);
 }
 
 #this⟦header⟧⟦portraiture⟧ {
