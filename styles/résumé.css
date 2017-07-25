@@ -5,7 +5,7 @@
 
 /*
 // :root
-// () => (--φ, --font-size-♮, --line-height, --vertical-rhythm-guide-url)
+// () => (--φ, --font-size-♮, --line-height, --vertical-rhythm-guide-url, --vertical-rhythm-guide-position)
 */
 
 :root {
@@ -13,6 +13,7 @@
   --font-size-♮: 108.33%; /* 17.33px = 13pt */
   --line-height: 1rem * var(--φ); /* 28px = 21pt */
   --vertical-rhythm-guide-url: url(https://basehold.it/i/28/454343);
+  --vertical-rhythm-guide-position: 0 18px;
 }
 
 /*
@@ -96,11 +97,12 @@
 
 /*
 // .config｡vertical-rhythm-guide
-// (--vertical-rhythm-guide-url) => ()
+// (--vertical-rhythm-guide-url, --vertical-rhythm-guide-position) => ()
 */
 
 .config｡vertical-rhythm-guide {
   background-image: var(--vertical-rhythm-guide-url);
+  background-position: var(--vertical-rhythm-guide-position);
 }
 
 /*
@@ -126,7 +128,8 @@
   position: relative;
   margin: calc(var(--line-height)) auto;
   background-color: white;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+              0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .component｡visual｡paper::after {
@@ -147,7 +150,7 @@
 
 /*???*/
 #this {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: "header header"
                        "summary contact"
                        "experience experience"
@@ -247,6 +250,8 @@
   height: 100%;
   z-index: 0;
   object-fit: cover;
+  object-position: -3px 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 60% 70%, 0 70%);
 }
 
 
