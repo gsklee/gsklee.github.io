@@ -172,6 +172,7 @@
 
 #this > header > h1 {
   font-family: 'Alegreya', serif;
+  font-weight: normal;
   font-size: calc(var(--font-size-♯♯♯♯));
   line-height: calc(var(--line-height-♯♯♯♯));
 }
