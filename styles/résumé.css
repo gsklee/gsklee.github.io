@@ -17,13 +17,16 @@
 
 /*
 // .config｡modular-scale
-// (--φ) => (--font-size-♯, --font-size-♯♯, --font-size-♯♯♯)
+// (--φ, --line-height) => (--font-size-♯, --line-height-♯, --font-size-♯♯, --line-height-♯♯, --font-size-♯♯♯, --line-height-♯♯♯)
 */
 
 .config｡modular-scale {
   --font-size-♯: 1rem * var(--φ);
+  --line-height-♯: var(--line-height);
   --font-size-♯♯: 1rem * var(--φ) * var(--φ);
+  --line-height-♯♯: var(--line-height) * 2;
   --font-size-♯♯♯: 1rem * var(--φ) * var(--φ) * var(--φ);
+  --line-height-♯♯♯: var(--line-height) * 3;
 }
 
 /*
@@ -139,7 +142,7 @@
 
 /*
 // #this
-// (--φ, --line-height, --font-size-♯, --font-size-♯♯, --font-size-♯♯♯) => ()
+// (--φ, --font-size-♯, --line-height-♯, --font-size-♯♯, --line-height-♯♯, --font-size-♯♯♯, --line-height-♯♯♯) => ()
 */
 
 /*???*/
@@ -162,21 +165,19 @@
   width: calc(100vw / var(--φ));
 }
 
-/*???*/
 #this > header > h1 {
   font-size: calc(var(--font-size-♯♯♯));
-  line-height: calc(var(--line-height) * 3);
+  line-height: calc(var(--line-height-♯♯♯));
 }
 
-/*???*/
 #this > header > .component｡structural｡subheading {
   font-size: calc(var(--font-size-♯♯));
-  line-height: calc(var(--line-height) * 2);
+  line-height: calc(var(--line-height-♯♯));
 }
 
-/*???*/
 #this > section > h1 {
   font-size: calc(var(--font-size-♯));
+  line-height: calc(var(--line-height-♯));
 }
 
 #this⟦header⟧ {
@@ -223,6 +224,7 @@
 
 /*
 // #this⟦header⟧
+// (--line-height) => ()
 */
 
 /*???*/
