@@ -27,6 +27,14 @@
 }
 
 /*
+// .config｡grid
+*/
+
+.config｡grid > body {
+  display: grid;
+}
+
+/*
 // .config｡normalization
 */
 
@@ -93,25 +101,14 @@
 }
 
 /*
-// .｡｡｡grid
+// .component｡structural｡frame
 */
 
-.｡｡｡grid { /**/
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: "header header"
-                       "summary contact";
-} /**/
-
-/*
-// .component｡structural｡positioner & .component｡structural｡positionee
-*/
-
-.component｡structural｡positioner {
+.component｡structural｡frame {
   position: relative;
 }
 
-.component｡structural｡positionee {
+.component｡structural｡frame > * {
   position: absolute;
   z-index: 1;
 }
@@ -145,7 +142,11 @@
 // (--φ, --line-height, --font-size-♯, --font-size-♯♯, --font-size-♯♯♯) => ()
 */
 
+/*???*/
 #this {
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "header header"
+                       "summary contact";
   font-family: 'Alegreya', serif;
   hyphens: auto;
 }
@@ -154,26 +155,26 @@
   width: calc(100vw / var(--φ));
 }
 
+/*???*/
 #this > header > h1 {
   font-size: calc(var(--font-size-♯♯♯));
   line-height: calc(var(--line-height) * 3);
 }
 
+/*???*/
 #this > header > .component｡structural｡subheading {
   font-size: calc(var(--font-size-♯♯));
   line-height: calc(var(--line-height) * 2);
 }
 
+/*???*/
 #this > section > h1 {
   font-size: calc(var(--font-size-♯));
 }
 
-/*
-//  #grid...
-*/
-
 #this⟦header⟧ {
   grid-area: header;
+  height: calc(100vw / var(--φ) / var(--φ));
   font-family: 'EB Garamond', serif;
 }
 
@@ -185,10 +186,39 @@
   grid-area: contact;
 }
 
+#this⟦experience⟧ {
+  grid-area: experience;
+}
+
+#this⟦speeches⟧ {
+  grid-area: speeches;
+}
+
+#this⟦skillset⟧ {
+  grid-area: skillset;
+}
+
+#this⟦languages⟧ {
+  grid-area: languages;
+}
+
+#this⟦organizations⟧ {
+  grid-area: organizations;
+}
+
+#this⟦education⟧ {
+  grid-area: education;
+}
+
+#this⟦interests⟧ {
+  grid-area: interests;
+}
+
 /*
-//  #grid⟦header⟧
+// #this⟦header⟧
 */
 
+/*???*/
 #this⟦header⟧⟦heading⟧ {
   right: calc(var(--line-height) /2);
   bottom: calc(var(--line-height) * 3.5);
@@ -196,6 +226,7 @@
   background-color: white;
 }
 
+/*???*/
 #this⟦header⟧⟦subheading⟧ {
   right: calc(var(--line-height) / 2);
   bottom: calc(var(--line-height) / 2);
@@ -203,13 +234,8 @@
   background-color: white;
 }
 
-/*
-//  #grid⟦header⟧⟦portraiture⟧
-//  var: --φ
-*/
-
+/*???*/
 #this⟦header⟧⟦portraiture⟧ {
-  height: calc(100vw / var(--φ) / var(--φ));
 }
 
 
