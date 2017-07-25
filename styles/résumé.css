@@ -18,16 +18,18 @@
 
 /*
 // .config｡modular-scale
-// (--φ, --line-height) => (--font-size-♯, --line-height-♯, --font-size-♯♯, --line-height-♯♯, --font-size-♯♯♯, --line-height-♯♯♯)
+// (--φ, --line-height) => (--font-size-♯, --line-height-♯, --font-size-♯♯, --line-height-♯♯, --font-size-♯♯♯, --line-height-♯♯♯, --font-size-♯♯♯♯, --line-height-♯♯♯♯)
 */
 
 .config｡modular-scale {
-  --font-size-♯: 1rem * var(--φ);
-  --line-height-♯: var(--line-height);
-  --font-size-♯♯: 1rem * var(--φ) * var(--φ);
-  --line-height-♯♯: var(--line-height) * 2;
-  --font-size-♯♯♯: 1rem * var(--φ) * var(--φ) * var(--φ);
-  --line-height-♯♯♯: var(--line-height) * 3;
+  --font-size-♯: 1rem * var(--φ); /* 28px = 21pt */
+  --line-height-♯: var(--line-height); /* 28px = 21pt */
+  --font-size-♯♯: 1rem * var(--φ) * var(--φ); /* 45.4px = 34pt */
+  --line-height-♯♯: var(--line-height) * 2; /* 56px = 42pt */
+  --font-size-♯♯♯: 1rem * var(--φ) * var(--φ) * var(--φ); /* 73.4px = 55pt */
+  --line-height-♯♯♯: var(--line-height) * 3; /* 84px = 63pt */
+  --font-size-♯♯♯♯: 1rem * var(--φ) * var(--φ) * var(--φ) * var(--φ); /* 118.8px = 89pt */
+  --line-height-♯♯♯♯: var(--line-height) * 5; /* 140px = 105pt */
 }
 
 /*
@@ -145,7 +147,7 @@
 
 /*
 // #this
-// (--φ, --font-size-♯, --line-height-♯, --font-size-♯♯, --line-height-♯♯, --font-size-♯♯♯, --line-height-♯♯♯) => ()
+// (--φ, --font-size-♯, --line-height-♯, --font-size-♯♯, --line-height-♯♯, --font-size-♯♯♯♯, --line-height-♯♯♯♯) => ()
 */
 
 /*???*/
@@ -169,8 +171,9 @@
 }
 
 #this > header > h1 {
-  font-size: calc(var(--font-size-♯♯♯));
-  line-height: calc(var(--line-height-♯♯♯));
+  font-family: 'Alegreya', serif;
+  font-size: calc(var(--font-size-♯♯♯♯));
+  line-height: calc(var(--line-height-♯♯♯♯));
 }
 
 #this > header > .component｡structural｡subheading {
@@ -186,7 +189,6 @@
 #this⟦header⟧ {
   grid-area: header;
   height: calc(100vw / var(--φ) / var(--φ));
-  font-family: 'EB Garamond', serif;
 }
 
 #this⟦summary⟧ {
