@@ -194,12 +194,12 @@
   height: calc(100vw / var(--φ) / var(--φ));
 }
 
-#this⟦summary⟧ {
-  grid-area: summary;
-}
-
 #this⟦contact⟧ {
   grid-area: contact;
+}
+
+#this⟦summary⟧ {
+  grid-area: summary;
 }
 
 #this⟦experience⟧ {
@@ -256,86 +256,4 @@
                      calc(100vw / var(--φ) / var(--φ)) calc(100vw / var(--φ) / var(--φ)),
                      calc(100vw / var(--φ) / var(--φ)) calc(100vw / var(--φ) / var(--φ) / var(--φ)),
                      0 calc(100vw / var(--φ) / var(--φ) / var(--φ)));
-}
-
-
-
-
-
-
-
-/**
-* Style
-*/
-
-
-a {
-  color:#4F6128;
-  text-decoration-skip: ink;
-}
-abbr[title] {
-  border-bottom: 1px dotted #4F6128;
-  cursor: help;
-}
-p {
-  margin: .6em 0;
-}
-
-ul {
-  padding: 0;
-  list-style: square;
-}
-ul ul {
-  padding-left: 3em;
-}
-
-address {
-  font-style: normal;
-}
-li {
-  page-break-inside: avoid;
-}
-ol.timeline {
-  padding: 0;
-  border: 0 solid #ddd;
-  border-width: 4px 0;
-}
-ol.timeline > li {
-  list-style: none;
-  padding: .4em 0;
-  border: 1px solid white; /* Chrome printing bug */
-  border-top-color: #ccc;
-}
-ol.timeline > li:first-child {
-  border-top: 0;
-}
-ol.timeline > li > p {
-  margin: 0;
-}
-ol.timeline > li > .date {
-  float: left;
-  margin-left: .1em;
-  max-width: 8rem;
-  color: gray;
-  font-size: 110%;
-}
-ol.timeline > li > .date ~ p {
-  margin-left: 9rem;
-}
-.note {
-  margin-top: .4em;
-  font-size: 75%;
-}
-.note a:not(:hover):not(:active) {
-  color: inherit;
-}
-footer {
-  margin-top: 3em;
-  font-style: italic;
-}
-.amp {
-  font-style: italic;
-}
-#projects .timeline li p:nth-of-type(2) a:first-of-type {
-  font-weight: bold;
 }
