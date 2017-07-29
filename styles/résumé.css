@@ -148,11 +148,12 @@
 
 /*
 // #this
-// (--φ, --font-size-♯, --line-height-♯, --font-size-♯♯♯, --line-height-♯♯♯) => ()
+// (--φ, --line-height, --font-size-♯, --line-height-♯, --font-size-♯♯♯, --line-height-♯♯♯) => ()
 */
 
 #this {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.618fr 1fr;
+  grid-row-gap: calc(var(--line-height));
   grid-template-areas: "header header"
                        "summary contact"
                        "experience experience"
