@@ -154,14 +154,14 @@
 #this {
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "header header"
-                       "summary contact"
-                       "experience experience"
-                       "speeches speeches"
-                       "skillset skillset"
-                       "languages languages"
+                       "summary summary"
+                       "experience contact"
+                       "experience skillset"
+                       "speeches skillset"
+                       "speeches languages"
+                       "speeches interests"
                        "organizations organizations"
-                       "education education"
-                       "interests interests";
+                       "education education";
   font-family: 'Alegreya', serif;
   hyphens: auto;
 }
