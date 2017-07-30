@@ -190,51 +190,15 @@
   line-height: calc(var(--line-height-♯));
 }
 
-#this⟦header⟧ {
-  grid-area: header;
-  height: calc(100vw / var(--φ) / var(--φ));
-}
-
-#this⟦contact⟧ {
-  grid-area: contact;
-}
-
-#this⟦summary⟧ {
-  grid-area: summary;
-}
-
-#this⟦experience⟧ {
-  grid-area: experience;
-}
-
-#this⟦speeches⟧ {
-  grid-area: speeches;
-}
-
-#this⟦skillset⟧ {
-  grid-area: skillset;
-}
-
-#this⟦languages⟧ {
-  grid-area: languages;
-}
-
-#this⟦organizations⟧ {
-  grid-area: organizations;
-}
-
-#this⟦education⟧ {
-  grid-area: education;
-}
-
-#this⟦interests⟧ {
-  grid-area: interests;
-}
-
 /*
 // #this⟦header⟧
 // (--φ, --line-height) => ()
 */
+
+#this⟦header⟧ {
+  grid-area: header;
+  height: calc(100vw / var(--φ) / var(--φ));
+}
 
 #this⟦header⟧⟦heading⟧ {
   left: calc(var(--line-height) * 2);
@@ -257,4 +221,77 @@
                      calc(100vw / var(--φ) / var(--φ)) calc(100vw / var(--φ) / var(--φ)),
                      calc(100vw / var(--φ) / var(--φ)) calc(100vw / var(--φ) / var(--φ) / var(--φ)),
                      0 calc(100vw / var(--φ) / var(--φ) / var(--φ)));
+}
+
+/*
+// #this⟦contact⟧
+*/
+
+#this⟦contact⟧ {
+  grid-area: contact;
+}
+
+/*
+// #this⟦summary⟧
+*/
+
+#this⟦summary⟧ {
+  grid-area: summary;
+  margin: 0 calc(var(--line-height)) 0 calc(var(--line-height) * 2);
+}
+
+/*
+// #this⟦experience⟧
+*/
+
+#this⟦experience⟧ {
+  grid-area: experience;
+}
+
+/*
+// #this⟦speeches⟧
+*/
+
+#this⟦speeches⟧ {
+  grid-area: speeches;
+}
+
+/*
+// #this⟦skillset⟧
+*/
+
+#this⟦skillset⟧ {
+  grid-area: skillset;
+}
+
+/*
+// #this⟦languages⟧
+*/
+
+#this⟦languages⟧ {
+  grid-area: languages;
+}
+
+/*
+// #this⟦organizations⟧
+*/
+
+#this⟦organizations⟧ {
+  grid-area: organizations;
+}
+
+/*
+// #this⟦education⟧
+*/
+
+#this⟦education⟧ {
+  grid-area: education;
+}
+
+/*
+// #this⟦interests⟧
+*/
+
+#this⟦interests⟧ {
+  grid-area: interests;
 }
