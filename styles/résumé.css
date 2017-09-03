@@ -122,6 +122,14 @@
 }
 
 /*
+// .component｡visual｡✘
+*/
+
+.component｡visual｡✘ {
+  display: none;
+}
+
+/*
 // .component｡visual｡paper
 // (--line-height) => ()
 // https://paulund.co.uk/learn-css-box-shadow/
