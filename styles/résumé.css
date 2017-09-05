@@ -159,6 +159,14 @@
 }
 
 /*
+// .semantics｡term｡technical
+*/
+
+.semantics｡term｡technical {
+  font-style: italic;
+}
+
+/*
 // #this
 // (--φ, --line-height, --font-size-♯, --line-height-♯, --font-size-♯♯♯, --line-height-♯♯♯) => ()
 */
@@ -200,6 +208,11 @@
 #this > section > h1 {
   font-size: calc(var(--font-size-♯));
   line-height: calc(var(--line-height-♯));
+}
+
+#this > em {
+  font-family: 'Alegreya', serif;
+  font-style: normal;
 }
 
 /*
