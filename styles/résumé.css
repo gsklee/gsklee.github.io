@@ -202,9 +202,12 @@
   line-height: calc(var(--line-height-♯));
 }
 
+#this a {
+}
+
 #this em {
-  font-family: 'Alegreya', serif;
-  font-style: normal;
+  border-bottom: 3px solid #b4e7f8;
+  box-shadow: inset 0 -4px 0 #b4e7f8;
 }
 
 #this .content｡typographical｡glyph-unavailable-in-alegreya {
