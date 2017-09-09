@@ -15,6 +15,7 @@
   --line-height: 1rem * var(--φ); /* 28px = 21pt */
   --vertical-rhythm-guide-url: url(https://basehold.it/i/28/454343);
   --vertical-rhythm-guide-position: 0 18px;
+  --emphasis-color: #b4e7f8;
 }
 
 /*
@@ -134,6 +135,36 @@
 }
 
 /*
+// .component｡visual｡highlighter-underline
+// (--emphasis-color) => ()
+*/
+
+.component｡visual｡highlighter-underline {
+  border-bottom: 3px solid var(--emphasis-color);
+  box-shadow: inset 0 -4px 0 var(--emphasis-color);
+}
+
+.component｡visual｡highlighter-underline::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-bottom: 7px solid var(--emphasis-color);
+  transform: translate3d(-3px, 20px, 0);
+}
+
+.component｡visual｡highlighter-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 7px solid var(--emphasis-color);
+  border-right: 3px solid transparent;
+  transform: translate3d(0, 20px, 0);
+}
+
+/*
 // .component｡visual｡paper
 // (--line-height) => ()
 // https://paulund.co.uk/learn-css-box-shadow/
@@ -174,7 +205,7 @@
                        "organizations organizations"
                        "education education"
                        "interests interests";
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: Alegreya Sans, sans-serif;
   font-weight: 300;
   hyphens: auto;
 }
@@ -184,14 +215,14 @@
 }
 
 #this > header > h1 {
-  font-family: 'Alegreya', serif;
+  font-family: Alegreya, serif;
   font-weight: normal;
   font-size: calc(var(--font-size-♯♯♯));
   line-height: calc(var(--line-height-♯♯♯));
 }
 
 #this > header > .component｡structural｡subheading {
-  font-family: 'EB Garamond', serif;
+  font-family: EB Garamond, serif;
   font-size: calc(var(--font-size-♯));
   line-height: calc(var(--line-height-♯));
   opacity: 0.25;
@@ -203,11 +234,6 @@
 }
 
 #this a {
-}
-
-#this em {
-  border-bottom: 3px solid #b4e7f8;
-  box-shadow: inset 0 -4px 0 #b4e7f8;
 }
 
 #this .content｡typographical｡glyph-unavailable-in-alegreya {
