@@ -159,14 +159,6 @@
 }
 
 /*
-// .semantics｡term｡technical
-*/
-
-.semantics｡term｡technical {
-  font-style: italic;
-}
-
-/*
 // #this
 // (--φ, --line-height, --font-size-♯, --line-height-♯, --font-size-♯♯♯, --line-height-♯♯♯) => ()
 */
@@ -210,9 +202,13 @@
   line-height: calc(var(--line-height-♯));
 }
 
-#this > em {
+#this em {
   font-family: 'Alegreya', serif;
   font-style: normal;
+}
+
+#this .content｡typographical｡glyph-unavailable-in-alegreya {
+  font-variant-caps: all-small-caps;
 }
 
 /*
