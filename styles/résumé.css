@@ -172,6 +172,39 @@
 }
 
 /*
+// .component｡visual｡highlighter-sideline-left
+// (--component｡visual｡highlighter-sideline-left｡color, --component｡visual｡highlighter-sideline-left｡width, --component｡visual｡highlighter-sideline-left｡rise) => ()
+*/
+
+.component｡visual｡highlighter-sideline-left {
+  position: relative;
+  box-shadow: calc(-1 * var(--component｡visual｡highlighter-sideline-left｡width) / 2) 0 0 var(--component｡visual｡highlighter-sideline-left｡color),
+              calc(var(--component｡visual｡highlighter-sideline-left｡width) / 2) 0 0 var(--component｡visual｡highlighter-sideline-left｡color) inset;
+}
+
+.component｡visual｡highlighter-sideline-left::before {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--component｡visual｡highlighter-sideline-left｡rise));
+  left: calc(-1 * var(--component｡visual｡highlighter-sideline-left｡width) / 2);
+  width: 0;
+  height: 0;
+  border-right: var(--component｡visual｡highlighter-underline｡height) solid transparent;
+  border-bottom: var(--component｡visual｡highlighter-underline｡run) solid var(--component｡visual｡highlighter-sideline-left｡color);
+}
+
+.component｡visual｡highlighter-sideline-left::after {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--component｡visual｡highlighter-sideline-left｡width) / 2);
+  bottom: calc(-1 * var(--component｡visual｡highlighter-sideline-left｡rise));
+  width: 0;
+  height: 0;
+  border-top: var(--component｡visual｡highlighter-underline｡run) solid var(--component｡visual｡highlighter-sideline-left｡color);
+  border-left: var(--component｡visual｡highlighter-underline｡height) solid transparent;
+}
+
+/*
 // .component｡visual｡paper
 // (--line-height) => ()
 // https://paulund.co.uk/learn-css-box-shadow/
@@ -233,6 +266,13 @@
 
 #this a.component｡visual｡highlighter-underline:hover {
   --component｡visual｡highlighter-underline｡height: 6px;
+}
+
+#this dt.component｡visual｡highlighter-sideline-left,
+#this dd.component｡visual｡highlighter-sideline-left, {
+  --component｡visual｡highlighter-sideline-left｡color: #EEEDF0;
+  --component｡visual｡highlighter-sideline-left｡width: 6px;
+  --component｡visual｡highlighter-sideline-left｡rise: 2px;
 }
 
 #this.component｡visual｡paper {
