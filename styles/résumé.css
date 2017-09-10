@@ -16,6 +16,8 @@
   --config｡vertical-rhythm-guide｡url: url(https://basehold.it/i/28/454343);
   --config｡vertical-rhythm-guide｡position: 0 18px;
   --component｡visual｡highlighter-underline｡color: #EEEDF0;
+  --component｡visual｡highlighter-underline｡height: 6px;
+  --component｡visual｡highlighter-underline｡run: 2px;
 }
 
 /*
@@ -140,13 +142,13 @@
 
 /*
 // .component｡visual｡highlighter-underline
-// (--component｡visual｡highlighter-underline｡color) => ()
+// (--component｡visual｡highlighter-underline｡color, --component｡visual｡highlighter-underline｡height, --component｡visual｡highlighter-underline｡run) => ()
 */
 
 .component｡visual｡highlighter-underline {
   position: relative;
-  box-shadow: 0 3px 0 var(--component｡visual｡highlighter-underline｡color),
-              0 -3px 0 var(--component｡visual｡highlighter-underline｡color) inset;
+  box-shadow: 0 calc(var(--component｡visual｡highlighter-underline｡height) / 2) 0 var(--component｡visual｡highlighter-underline｡color),
+              0 calc(-1 * var(--component｡visual｡highlighter-underline｡height) / 2) 0 var(--component｡visual｡highlighter-underline｡color) inset;
 }
 
 .component｡visual｡highlighter-underline::before {
@@ -154,9 +156,10 @@
   position: absolute;
   width: 0;
   height: 0;
-  border-left: 2px solid transparent;
-  border-bottom: 6px solid var(--component｡visual｡highlighter-underline｡color);
-  transform: translate3d(-2px, 21px, 0);
+  border-left: var(--component｡visual｡highlighter-underline｡run) solid transparent;
+  border-bottom: var(--component｡visual｡highlighter-underline｡height) solid var(--component｡visual｡highlighter-underline｡color);
+  left: calc(-1 * var(--component｡visual｡highlighter-underline｡run));
+  bottom: calc(-1 * var(--component｡visual｡highlighter-underline｡height) / 2);
 }
 
 .component｡visual｡highlighter-underline::after {
@@ -164,9 +167,9 @@
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 6px solid var(--component｡visual｡highlighter-underline｡color);
-  border-right: 2px solid transparent;
-  transform: translate3d(0, 21px, 0);
+  border-top: var(--component｡visual｡highlighter-underline｡height) solid var(--component｡visual｡highlighter-underline｡color);
+  border-right: var(--component｡visual｡highlighter-underline｡run) solid transparent;
+  bottom: calc(-1 * var(--component｡visual｡highlighter-underline｡height) / 2);
 }
 
 /*
