@@ -281,6 +281,22 @@
   --component｡visual｡highlighter-sideline-left｡color: #A69E9B;
 }
 
+#this li.component｡visual｡highlighter-sideline-left {
+  --component｡visual｡highlighter-sideline-left｡color: #C7C7C8;
+  --component｡visual｡highlighter-sideline-left｡width: 6px;
+  --component｡visual｡highlighter-sideline-left｡rise: 2px;
+
+  padding-left: calc(var(--line-height) / 2);
+}
+
+#this li.component｡visual｡highlighter-sideline-left:nth-of-type(3n+2) {
+  --component｡visual｡highlighter-sideline-left｡color: #7C6A64;
+}
+
+#this li.component｡visual｡highlighter-sideline-left:nth-of-type(3n) {
+  --component｡visual｡highlighter-sideline-left｡color: #3C3839;
+}
+
 #this.component｡visual｡paper {
   width: calc(100vw / var(--φ));
 }
@@ -356,7 +372,7 @@
 
 #this⟦summary⟧ {
   grid-area: summary;
-  margin: 0 calc(var(--line-height)) 0 calc(var(--line-height) * 2);
+  margin: calc(var(--line-height)) calc(var(--line-height)) 0 calc(var(--line-height) * 2);
 }
 
 /*
