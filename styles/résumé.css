@@ -259,6 +259,7 @@
 
 #this > section > h1 {
   font-size: calc(var(--font-size-♯));
+  font-variant-caps: small-caps;
   line-height: calc(var(--line-height-♯));
 }
 
@@ -318,6 +319,7 @@
 
 #this⟦experience⟧ {
   grid-area: experience;
+  margin: 0 calc(var(--line-height) * 2);
 }
 
 /*
