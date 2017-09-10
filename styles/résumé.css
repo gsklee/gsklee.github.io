@@ -223,7 +223,7 @@
 
 #this a.component｡visual｡highlighter-underline {
   --component｡visual｡highlighter-underline｡color: #A69E9B;
-  --component｡visual｡highlighter-underline｡height: 0;
+  --component｡visual｡highlighter-underline｡height: 0px;
   --component｡visual｡highlighter-underline｡run: 2px;
 
   color: var(--component｡visual｡highlighter-underline｡color);
