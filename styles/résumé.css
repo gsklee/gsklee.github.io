@@ -6,20 +6,24 @@
 
 /*
 // :root
-// () => (--φ, --font-size-♮, --line-height, --vertical-rhythm-guide-url, --vertical-rhythm-guide-position)
 */
 
 :root {
   --φ: 1.618;
   --font-size-♮: 108.33%; /* 17.33px = 13pt */
   --line-height: 1rem * var(--φ); /* 28px = 21pt */
+  --palette-color-1: #EEEDF0;
+  --palette-color-2: #C7C7C8;
+  --palette-color-3: #BBBBBB;
+  --palette-color-4: #A69E9B;
+  --palette-color-5: #7C6A64;
+  --palette-color-6: #3C3839;
   --config｡vertical-rhythm-guide｡url: url(https://basehold.it/i/28/454343);
   --config｡vertical-rhythm-guide｡position: 0 18px;
 }
 
 /*
 // .config｡modular-scale
-// (--φ, --line-height) => (--font-size-♯, --line-height-♯, --font-size-♯♯, --line-height-♯♯, --font-size-♯♯♯, --line-height-♯♯♯, --font-size-♯♯♯♯, --line-height-♯♯♯♯)
 */
 
 .config｡modular-scale {
@@ -95,7 +99,6 @@
 
 /*
 // .config｡vertical-rhythm
-// (--font-size-♮, --line-height) => ()
 */
 
 .config｡vertical-rhythm {
@@ -108,7 +111,6 @@
 
 /*
 // .config｡vertical-rhythm-guide
-// (--config｡vertical-rhythm-guide｡url, --config｡vertical-rhythm-guide｡position) => ()
 */
 
 .config｡vertical-rhythm-guide {
@@ -141,7 +143,6 @@
 
 /*
 // .component｡visual｡highlighter-underline
-// (--component｡visual｡highlighter-underline｡color, --component｡visual｡highlighter-underline｡height, --component｡visual｡highlighter-underline｡run) => ()
 */
 
 .component｡visual｡highlighter-underline {
@@ -173,7 +174,6 @@
 
 /*
 // .component｡visual｡highlighter-sideline-left
-// (--component｡visual｡highlighter-sideline-left｡color, --component｡visual｡highlighter-sideline-left｡width, --component｡visual｡highlighter-sideline-left｡rise) => ()
 */
 
 .component｡visual｡highlighter-sideline-left {
@@ -206,7 +206,6 @@
 
 /*
 // .component｡visual｡paper
-// (--line-height) => ()
 // https://paulund.co.uk/learn-css-box-shadow/
 */
 
@@ -231,7 +230,6 @@
 
 /*
 // #this
-// (--φ, --line-height, --font-size-♯, --line-height-♯, --font-size-♯♯♯, --line-height-♯♯♯) => ()
 */
 
 #this {
@@ -250,13 +248,13 @@
 }
 
 #this em.component｡visual｡highlighter-underline {
-  --component｡visual｡highlighter-underline｡color: #EEEDF0;
+  --component｡visual｡highlighter-underline｡color: var(--palette-color-1);
   --component｡visual｡highlighter-underline｡height: 6px;
   --component｡visual｡highlighter-underline｡run: 2px;
 }
 
 #this a.component｡visual｡highlighter-underline {
-  --component｡visual｡highlighter-underline｡color: #A69E9B;
+  --component｡visual｡highlighter-underline｡color: var(--palette-color-4);
   --component｡visual｡highlighter-underline｡height: 0px;
   --component｡visual｡highlighter-underline｡run: 2px;
 
@@ -269,7 +267,7 @@
 
 #this dt.component｡visual｡highlighter-sideline-left,
 #this dd.component｡visual｡highlighter-sideline-left {
-  --component｡visual｡highlighter-sideline-left｡color: #EEEDF0;
+  --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-1);
   --component｡visual｡highlighter-sideline-left｡width: 6px;
   --component｡visual｡highlighter-sideline-left｡rise: 2px;
 
@@ -278,11 +276,11 @@
 
 #this dt.component｡visual｡highlighter-sideline-left:nth-of-type(even),
 #this dd.component｡visual｡highlighter-sideline-left:nth-of-type(even) {
-  --component｡visual｡highlighter-sideline-left｡color: #A69E9B;
+  --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-4);
 }
 
 #this li.component｡visual｡highlighter-sideline-left {
-  --component｡visual｡highlighter-sideline-left｡color: #C7C7C8;
+  --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-2);
   --component｡visual｡highlighter-sideline-left｡width: 6px;
   --component｡visual｡highlighter-sideline-left｡rise: 2px;
 
@@ -290,11 +288,11 @@
 }
 
 #this li.component｡visual｡highlighter-sideline-left:nth-of-type(3n+2) {
-  --component｡visual｡highlighter-sideline-left｡color: #7C6A64;
+  --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-5);
 }
 
 #this li.component｡visual｡highlighter-sideline-left:nth-of-type(3n) {
-  --component｡visual｡highlighter-sideline-left｡color: #3C3839;
+  --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-6);
 }
 
 #this.component｡visual｡paper {
@@ -327,7 +325,6 @@
 
 /*
 // #this⟦header⟧
-// (--φ, --line-height) => ()
 */
 
 #this⟦header⟧ {
