@@ -176,7 +176,7 @@
 // (--component｡visual｡highlighter-sideline-left｡color, --component｡visual｡highlighter-sideline-left｡width, --component｡visual｡highlighter-sideline-left｡rise) => ()
 */
 
-.component｡visual｡highlighter-sideline-left {padding-left: 10px;
+.component｡visual｡highlighter-sideline-left {
   position: relative;
   box-shadow: calc(-1 * var(--component｡visual｡highlighter-sideline-left｡width) / 2) 0 0 var(--component｡visual｡highlighter-sideline-left｡color),
               calc(var(--component｡visual｡highlighter-sideline-left｡width) / 2) 0 0 var(--component｡visual｡highlighter-sideline-left｡color) inset;
@@ -200,7 +200,7 @@
   bottom: calc(-1 * var(--component｡visual｡highlighter-sideline-left｡rise));
   width: 0;
   height: 0;
-  border-top: var(--component｡visual｡highlighter-sideline-left｡rise) solid green;
+  border-top: var(--component｡visual｡highlighter-sideline-left｡rise) solid var(--component｡visual｡highlighter-sideline-left｡color);
   border-left: var(--component｡visual｡highlighter-sideline-left｡width) solid transparent;
 }
 
@@ -273,6 +273,8 @@
   --component｡visual｡highlighter-sideline-left｡color: #EEEDF0;
   --component｡visual｡highlighter-sideline-left｡width: 6px;
   --component｡visual｡highlighter-sideline-left｡rise: 2px;
+
+  padding-left: calc(var(--line-height) / 2);
 }
 
 #this.component｡visual｡paper {
