@@ -67,13 +67,15 @@
 }
 
 .config｡normalization :focus {
-  outline: 2px dotted;
-  animation: outline-fade-in 0.75s ease-in-out infinite alternate;
+  outline-width: 0;
+  padding: 5px;
+  background-color: white;
+  animation: sepia-toning 0.75s ease-in-out infinite alternate;
 }
 
-@keyframes outline-fade-in {
-  0% {
-    outline-color: transparent;
+@keyframes sepia-toning {
+  100% {
+    filter: sepia(100%);
   }
 }
 
@@ -151,22 +153,22 @@
 .component｡visual｡highlighter-underline::before {
   content: "";
   position: absolute;
+  left: calc(-1 * var(--component｡visual｡highlighter-underline｡run));
+  bottom: calc(-1 * var(--component｡visual｡highlighter-underline｡height) / 2);
   width: 0;
   height: 0;
   border-left: var(--component｡visual｡highlighter-underline｡run) solid transparent;
   border-bottom: var(--component｡visual｡highlighter-underline｡height) solid var(--component｡visual｡highlighter-underline｡color);
-  left: calc(-1 * var(--component｡visual｡highlighter-underline｡run));
-  bottom: calc(-1 * var(--component｡visual｡highlighter-underline｡height) / 2);
 }
 
 .component｡visual｡highlighter-underline::after {
   content: "";
   position: absolute;
+  bottom: calc(-1 * var(--component｡visual｡highlighter-underline｡height) / 2);
   width: 0;
   height: 0;
   border-top: var(--component｡visual｡highlighter-underline｡height) solid var(--component｡visual｡highlighter-underline｡color);
   border-right: var(--component｡visual｡highlighter-underline｡run) solid transparent;
-  bottom: calc(-1 * var(--component｡visual｡highlighter-underline｡height) / 2);
 }
 
 /*
@@ -281,8 +283,8 @@
 }
 
 #this⟦header⟧⟦portraiture⟧ {
-  height: 102%;
   z-index: 0;
+  height: 102%;
   object-fit: cover;
   object-position: -3px 0;
   clip-path: polygon(0 0,
