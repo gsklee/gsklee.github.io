@@ -215,8 +215,30 @@
   hyphens: auto;
 }
 
+#this em.component｡visual｡highlighter-underline {
+  --component｡visual｡highlighter-underline｡color: #EEEDF0;
+  --component｡visual｡highlighter-underline｡height: 6px;
+  --component｡visual｡highlighter-underline｡run: 2px;
+}
+
+#this a.component｡visual｡highlighter-underline {
+  --component｡visual｡highlighter-underline｡color: #A69E9B;
+  --component｡visual｡highlighter-underline｡height: 0;
+  --component｡visual｡highlighter-underline｡run: 2px;
+
+  color: var(--component｡visual｡highlighter-underline｡color);
+}
+
+#this a.component｡visual｡highlighter-underline:hover {
+  --component｡visual｡highlighter-underline｡height: 6px;
+}
+
 #this.component｡visual｡paper {
   width: calc(100vw / var(--φ));
+}
+
+#this .content｡typographical｡glyph-unavailable-in-alegreya {
+  font-variant-caps: all-small-caps;
 }
 
 #this > header > h1 {
@@ -236,28 +258,6 @@
 #this > section > h1 {
   font-size: calc(var(--font-size-♯));
   line-height: calc(var(--line-height-♯));
-}
-
-#this em.component｡visual｡highlighter-underline {
-  --component｡visual｡highlighter-underline｡color: #EEEDF0;
-  --component｡visual｡highlighter-underline｡height: 6px;
-  --component｡visual｡highlighter-underline｡run: 2px;
-}
-
-#this a.component｡visual｡highlighter-underline {
-  --component｡visual｡highlighter-underline｡color: #A69E9B;
-  --component｡visual｡highlighter-underline｡height: 0;
-  --component｡visual｡highlighter-underline｡run: 2px;
-
-  color: var(--component｡visual｡highlighter-underline｡color);
-}
-
-#this a.component｡visual｡highlighter-underline:hover {
-  --component｡visual｡highlighter-underline｡height: 6px;
-}
-
-#this .content｡typographical｡glyph-unavailable-in-alegreya {
-  font-variant-caps: all-small-caps;
 }
 
 /*
