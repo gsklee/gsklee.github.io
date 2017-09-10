@@ -15,9 +15,6 @@
   --line-height: 1rem * var(--φ); /* 28px = 21pt */
   --config｡vertical-rhythm-guide｡url: url(https://basehold.it/i/28/454343);
   --config｡vertical-rhythm-guide｡position: 0 18px;
-  --component｡visual｡highlighter-underline｡color: #EEEDF0;
-  --component｡visual｡highlighter-underline｡height: 6px;
-  --component｡visual｡highlighter-underline｡run: 2px;
 }
 
 /*
@@ -241,7 +238,22 @@
   line-height: calc(var(--line-height-♯));
 }
 
-#this a {
+#this em.component｡visual｡highlighter-underline {
+  --component｡visual｡highlighter-underline｡color: #EEEDF0;
+  --component｡visual｡highlighter-underline｡height: 6px;
+  --component｡visual｡highlighter-underline｡run: 2px;
+}
+
+#this a.component｡visual｡highlighter-underline {
+  --component｡visual｡highlighter-underline｡color: #A69E9B;
+  --component｡visual｡highlighter-underline｡height: 0;
+  --component｡visual｡highlighter-underline｡run: 2px;
+
+  color: var(--component｡visual｡highlighter-underline｡color);
+}
+
+#this a.component｡visual｡highlighter-underline:hover {
+  --component｡visual｡highlighter-underline｡height: 6px;
 }
 
 #this .content｡typographical｡glyph-unavailable-in-alegreya {
