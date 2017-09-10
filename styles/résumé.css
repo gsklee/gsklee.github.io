@@ -15,7 +15,7 @@
   --line-height: 1rem * var(--φ); /* 28px = 21pt */
   --config｡vertical-rhythm-guide｡url: url(https://basehold.it/i/28/454343);
   --config｡vertical-rhythm-guide｡position: 0 18px;
-  --component｡visual｡highlighter-underline｡color: #b4e7f8;
+  --component｡visual｡highlighter-underline｡color: #EEEDF0;
 }
 
 /*
@@ -46,7 +46,9 @@
 // .config｡normalization
 */
 
-.config｡normalization * {
+.config｡normalization *,
+.config｡normalization ::before,
+.config｡normalization ::after {
   margin: 0;
   padding: 0;
   transition: 0.25s;
@@ -121,7 +123,9 @@
   position: relative;
 }
 
-.component｡structural｡frame > * {
+.component｡structural｡frame > *,
+.component｡structural｡frame > ::before,
+.component｡structural｡frame > ::after {
   position: absolute;
   z-index: 1;
 }
@@ -140,10 +144,21 @@
 */
 
 .component｡visual｡highlighter-underline {
+  position: relative;
   box-shadow: 0 3px 0 var(--component｡visual｡highlighter-underline｡color),
               0 -3px 0 var(--component｡visual｡highlighter-underline｡color) inset;
 }
 
+.component｡visual｡highlighter-underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:#EEEDF0;
+  transform: skew(-40deg);
+}
+
+/*
 .component｡visual｡highlighter-underline::before {
   content: "";
   position: absolute;
@@ -163,6 +178,7 @@
   border-right: 2px solid transparent;
   transform: translate3d(0, 21px, 0);
 }
+*/
 
 /*
 // .component｡visual｡paper
