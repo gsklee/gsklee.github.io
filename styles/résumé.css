@@ -238,8 +238,8 @@
   grid-template-columns: 1.618fr 1fr;
   grid-template-areas: "header header"
                        "summary contact"
-                       "experience experience"
-                       "speeches skillset"
+                       "experience-major experience-major"
+                       "experience-minor skillset"
                        "speeches languages"
                        "organizations organizations"
                        "education education"
@@ -385,20 +385,40 @@
 }
 
 /*
-// #this⟦experience⟧
+// #this⟦experience-major⟧
 */
 
-#this⟦experience⟧ {
-  grid-area: experience;
+#this⟦experience-major⟧ {
+  grid-area: experience-major;
   margin: 0 calc(var(--line-height) * 2);
 }
 
-[id^=this⟦experience⟧⟦job⟧] {
+[id^=this⟦experience-major⟧⟦job⟧] {
   font-weight: normal;
 }
 
-[id^=this⟦experience⟧⟦timespan⟧],
-[id^=this⟦experience⟧⟦location⟧] {
+[id^=this⟦experience-major⟧⟦timespan⟧],
+[id^=this⟦experience-major⟧⟦location⟧] {
+  font-family: Alegreya Sans SC, sans-serif;
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+/*
+// #this⟦experience-minor⟧
+*/
+
+#this⟦experience-minor⟧ {
+  grid-area: experience-minor;
+  margin: 0 calc(var(--line-height)) 0 calc(var(--line-height) * 2);
+}
+
+[id^=this⟦experience-minor⟧⟦job⟧] {
+  font-weight: normal;
+}
+
+[id^=this⟦experience-minor⟧⟦timespan⟧],
+[id^=this⟦experience-minor⟧⟦location⟧] {
   font-family: Alegreya Sans SC, sans-serif;
   font-weight: 100;
   text-transform: lowercase;
