@@ -282,7 +282,7 @@
   --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-4);
 }
 
-#this dt.component｡visual｡highlighter-sideline-left:not(:first-of-type) {
+#this dt.component｡visual｡highlighter-sideline-left {
   padding-top: calc(var(--line-height) / 2);
 }
 
@@ -391,6 +391,10 @@
 #this⟦experience-major⟧ {
   grid-area: experience-major;
   margin: 0 calc(var(--line-height) * 2);
+}
+
+#this⟦experience-major⟧ dt.component｡visual｡highlighter-sideline-left:first-of-type {
+  padding-top: 0;
 }
 
 [id^=this⟦experience-major⟧⟦job⟧] {
