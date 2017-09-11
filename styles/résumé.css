@@ -248,6 +248,7 @@
   hyphens: auto;
 }
 
+#this strong.component｡visual｡highlighter-underline,
 #this em.component｡visual｡highlighter-underline {
   --component｡visual｡highlighter-underline｡color: var(--palette-color-1);
   --component｡visual｡highlighter-underline｡height: 6px;
