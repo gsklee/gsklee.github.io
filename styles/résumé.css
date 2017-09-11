@@ -2,8 +2,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond);
 @import url(https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i,900,900i); /* 400 */
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i); /* 300 */
-@import url(https://fonts.googleapis.com/css?family=Alegreya+SC:400,400i,700,700i,900,900i); /* 400 */
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i); /* 300, 300i, 400, 700 */
+@import url(https://fonts.googleapis.com/css?family=Alegreya+SC:400,400i,700,700i,900,900i); /* 700 */
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i); /* 100 */
 
 /*
@@ -282,6 +282,10 @@
   --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-4);
 }
 
+#this dt.component｡visual｡highlighter-sideline-left:not(:first-of-type) {
+  padding-top: calc(var(--line-height) / 2);
+}
+
 #this li.component｡visual｡highlighter-sideline-left {
   --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-2);
   --component｡visual｡highlighter-sideline-left｡width: 6px;
@@ -291,12 +295,16 @@
   padding-left: calc(var(--line-height) - var(--component｡visual｡highlighter-sideline-left｡width));
 }
 
-#this li.component｡visual｡highlighter-sideline-left:nth-of-type(3n+2) {
+#this li.component｡visual｡highlighter-sideline-left:nth-child(3n+2) {
   --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-5);
 }
 
-#this li.component｡visual｡highlighter-sideline-left:nth-of-type(3n) {
+#this li.component｡visual｡highlighter-sideline-left:nth-child(3n) {
   --component｡visual｡highlighter-sideline-left｡color: var(--palette-color-6);
+}
+
+#this li.component｡visual｡highlighter-sideline-left:last-child {
+  padding-bottom: calc(var(--line-height) / 2);
 }
 
 #this.component｡visual｡paper {
@@ -386,7 +394,7 @@
 }
 
 [id^=this⟦experience⟧⟦job⟧] {
-  font-weight: 400;
+  font-weight: normal;
 }
 
 [id^=this⟦experience⟧⟦timespan⟧],
