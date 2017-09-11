@@ -385,6 +385,10 @@
   margin: 0 calc(var(--line-height) * 2);
 }
 
+[id^=this⟦experience⟧⟦job⟧] {
+  font-weight: 400;
+}
+
 [id^=this⟦experience⟧⟦timespan⟧],
 [id^=this⟦experience⟧⟦location⟧] {
   font-family: Alegreya Sans SC, sans-serif;
