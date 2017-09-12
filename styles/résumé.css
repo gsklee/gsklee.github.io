@@ -213,10 +213,11 @@
 .component｡visual｡tooltip {
   position: relative;
   text-decoration: var(--component｡visual｡tooltip｡hint-decoration);
+  text-decoration-skip: ink;
   cursor: help;
 }
 
-.component｡visual｡tooltip:hover::after {
+.component｡visual｡tooltip::after {
   content: attr(title);
   position: absolute;
   z-index: 1;
@@ -224,8 +225,13 @@
   padding: 0 5px;
   color: var(--component｡visual｡tooltip｡tooltip-color);
   background: var(--component｡visual｡tooltip｡tooltip-background);
+  opacity: 0;
   font: var(--component｡visual｡tooltip｡tooltip-font);
   white-space: nowrap;
+}
+
+.component｡visual｡tooltip::after:hover {
+  opacity: 1;
 }
 
 /*
@@ -353,10 +359,10 @@
 }
 
 #this > header > .component｡structural｡subheading {
+  opacity: 0.25;
   font-family: EB Garamond, serif;
   font-size: calc(var(--font-size-♯));
   line-height: calc(var(--line-height-♯));
-  opacity: 0.25;
 }
 
 #this > section > h1 {
