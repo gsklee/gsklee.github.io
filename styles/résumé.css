@@ -435,7 +435,6 @@
 
 #this⟦speeches⟧ {
   grid-area: speeches;
-  margin: calc(-1 * var(--line-height) / 2) calc(var(--line-height) * 2) 0 0;
 }
 
 /*
@@ -444,6 +443,7 @@
 
 #this⟦skillset⟧ {
   grid-area: skillset;
+  margin: calc(-1 * var(--line-height) / 2) calc(var(--line-height) * 2) 0 0;
 }
 
 /*
