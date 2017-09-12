@@ -235,6 +235,7 @@
 .component｡visual｡paper {
   position: relative;
   margin: calc(var(--line-height)) auto;
+  width: var(--component｡visual｡paper｡width);
   background-color: white;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
               0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -340,7 +341,7 @@
 }
 
 #this.component｡visual｡paper {
-  width: calc(100vw / var(--φ));
+  --component｡visual｡paper｡width: calc(100vw / var(--φ));
 }
 
 #this > header > h1 {
