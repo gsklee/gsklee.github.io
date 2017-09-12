@@ -373,6 +373,7 @@
 
 #this⟦contact⟧ {
   grid-area: contact;
+  margin: 0 calc(var(--line-height) * 2) 0 0;
 }
 
 /*
@@ -434,6 +435,7 @@
 
 #this⟦speeches⟧ {
   grid-area: speeches;
+  margin: calc(-1 * var(--line-height) / 2) calc(var(--line-height) * 2) 0 0;
 }
 
 /*
