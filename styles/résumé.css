@@ -211,6 +211,7 @@
 */
 
 .component｡visual｡tooltip {
+  position: relative;
   text-decoration: var(--component｡visual｡tooltip｡hint-decoration);
   cursor: help;
 }
@@ -333,7 +334,7 @@
   --component｡visual｡tooltip｡hint-decoration: underline var(--palette-color-1);
   --component｡visual｡tooltip｡tooltip-color: var(--palette-color-1);
   --component｡visual｡tooltip｡tooltip-background: var(--palette-color-6);
-  --component｡visual｡tooltip｡tooltip-font: 100 Alegreya Sans SC, sans-serif;
+  --component｡visual｡tooltip｡tooltip-font: 100 var(--font-size-♮) Alegreya Sans SC, sans-serif;
 }
 
 #this .content｡typographical｡glyph-unavailable-in-alegreya {
