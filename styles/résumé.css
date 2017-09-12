@@ -269,6 +269,7 @@
                        "summary contact"
                        "experience-major experience-major"
                        "experience-minor skillset"
+                       "experience-minor languages"
                        "speeches languages"
                        "organizations organizations"
                        "education education"
@@ -479,7 +480,9 @@
 
 #this⟦skillset⟧ {
   grid-area: skillset;
-  margin: calc(-1 * var(--line-height) / 2) calc(var(--line-height) * 2) 0 0;
+  margin: calc(var(--line-height) / 2) calc(var(--line-height) * 2) 0 0;
+  font-weight: 100;
+  text-align: right;
 }
 
 /*
@@ -488,6 +491,9 @@
 
 #this⟦languages⟧ {
   grid-area: languages;
+  margin: calc(var(--line-height)) calc(var(--line-height) * 2) 0 0;
+  font-weight: 100;
+  text-align: right;
 }
 
 /*
