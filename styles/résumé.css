@@ -230,7 +230,7 @@
   white-space: nowrap;
 }
 
-.component｡visual｡tooltip::after:hover {
+.component｡visual｡tooltip:hover::after {
   opacity: 1;
 }
 
