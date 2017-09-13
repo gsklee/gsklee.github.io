@@ -485,6 +485,14 @@
   margin: calc(-1 * var(--line-height-♮) / 2) calc(var(--line-height-♮)) 0 calc(var(--line-height-♮) * 2);
 }
 
+#this⟦speeches⟧ > h1.component｡visual｡highlighter-sideline-left {
+  --component｡visual｡highlighter-sideline-left｡color: white;
+  --component｡visual｡highlighter-sideline-left｡width: 12px;
+  --component｡visual｡highlighter-sideline-left｡rise: 4px;
+
+  transform: translate3d(3px, -2px, 0);
+}
+
 /*
 // #this⟦skillset⟧
 */
