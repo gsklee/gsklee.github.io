@@ -542,4 +542,16 @@
 
 #this⟦interests⟧ {
   grid-area: interests;
+  margin: calc(var(--line-height-♮)) calc(var(--line-height-♮) * 2) 0 0;
+  font-family: Alegreya Sans SC, sans-serif;
+  font-weight: 100;
+  text-align: right;
+}
+
+#this⟦interests⟧ > * {
+  border-left: 1px solid var(--palette-color-1);
+}
+
+#this⟦interests⟧ .component｡structural｡tags {
+  text-transform: lowercase;
 }
