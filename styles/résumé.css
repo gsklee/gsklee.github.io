@@ -274,10 +274,11 @@
                        "experience-major experience-major"
                        "experience-minor skillset"
                        "experience-minor languages"
-                       "speeches languages"
+                       "experience-minor interests"
+                       "speeches interests"
+                       "speeches interests"
                        "organizations organizations"
-                       "education education"
-                       "interests interests";
+                       "education education";
   font-family: Alegreya Sans, sans-serif;
   font-weight: 300;
   hyphens: auto;
