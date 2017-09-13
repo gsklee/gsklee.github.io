@@ -157,7 +157,7 @@
 .component｡visual｡highlighter-strikethrough::before {
   content: "";
   position: absolute;
-  top: calc(50% - var(--component｡visual｡highlighter-strikethrough｡height));
+  top: calc(50% - var(--component｡visual｡highlighter-strikethrough｡height) / 2);
   width: 0;
   height: 0;
   border-left: var(--component｡visual｡highlighter-strikethrough｡run) solid transparent;
@@ -167,7 +167,7 @@
 .component｡visual｡highlighter-strikethrough::after {
   content: "";
   position: absolute;
-  top: calc(50% - var(--component｡visual｡highlighter-strikethrough｡height));
+  top: calc(50% - var(--component｡visual｡highlighter-strikethrough｡height) / 2);
   width: 0;
   height: 0;
   border-top: var(--component｡visual｡highlighter-strikethrough｡height) solid var(--component｡visual｡highlighter-strikethrough｡color);
@@ -321,7 +321,7 @@
 
 #this li.component｡visual｡highlighter-strikethrough {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-1);
-  --component｡visual｡highlighter-strikethrough｡height: 50%;
+  --component｡visual｡highlighter-strikethrough｡height: 14px;
   --component｡visual｡highlighter-strikethrough｡run: 2px;
 
   margin: 0 2px;
