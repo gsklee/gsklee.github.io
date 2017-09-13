@@ -146,6 +146,35 @@
 }
 
 /*
+// .component｡visual｡highlighter-strikethrough
+*/
+
+.component｡visual｡highlighter-strikethrough {
+  position: relative;
+  background: linear-gradient(0deg, var(--component｡visual｡highlighter-strikethrough｡color) 0%, var(--component｡visual｡highlighter-strikethrough｡color) 100%) center/100% var(--component｡visual｡highlighter-strikethrough｡height) no-repeat;
+}
+
+.component｡visual｡highlighter-strikethrough::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - var(--component｡visual｡highlighter-strikethrough｡height));
+  width: 0;
+  height: 0;
+  border-left: var(--component｡visual｡highlighter-strikethrough｡run) solid transparent;
+  border-bottom: var(--component｡visual｡highlighter-strikethrough｡height) solid var(--component｡visual｡highlighter-strikethrough｡color);
+}
+
+.component｡visual｡highlighter-strikethrough::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - var(--component｡visual｡highlighter-strikethrough｡height));
+  width: 0;
+  height: 0;
+  border-top: var(--component｡visual｡highlighter-strikethrough｡height) solid var(--component｡visual｡highlighter-strikethrough｡color);
+  border-right: var(--component｡visual｡highlighter-strikethrough｡run) solid transparent;
+}
+
+/*
 // .component｡visual｡highlighter-underline
 */
 
@@ -288,6 +317,15 @@
 #this small {
   font-size: calc(var(--font-size-♭));
   line-height: calc(var(--line-height-♭));
+}
+
+#this li.component｡visual｡highlighter-strikethrough {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-1);
+  --component｡visual｡highlighter-underline｡height: 50%;
+  --component｡visual｡highlighter-underline｡run: 2px;
+
+  margin: 0 2px;
+  font-family: Alegreya Sans SC, sans-serif;
 }
 
 #this strong.component｡visual｡highlighter-underline,
