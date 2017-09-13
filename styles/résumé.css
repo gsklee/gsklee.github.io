@@ -4,7 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i,900,900i); /* 400 */
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i); /* 300, 300i, 400, 700 */
 @import url(https://fonts.googleapis.com/css?family=Alegreya+SC:400,400i,700,700i,900,900i); /* 700 */
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i); /* 100 */
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,100i,300,300i,400,400i,500,500i,700,700i,800,800i,900,900i); /* 100, 300 */
 
 /*
 // :root
@@ -13,7 +13,7 @@
 :root {
   --φ: 1.618;
   --font-size-♮: 108.33%; /* 17.33px = 13pt */
-  --line-height: 1rem * var(--φ); /* 28px = 21pt */
+  --line-height-♮: 1rem * var(--φ); /* 28px = 21pt */
   --palette-color-1: #EEEDF0;
   --palette-color-2: #C7C7C8;
   --palette-color-3: #BBBBBB;
@@ -29,14 +29,16 @@
 */
 
 .config｡modular-scale {
+  --font-size-♭: 1rem / var(--φ); /* 10.7px = 8pt */
+  --line-height-♭: var(--line-height-♮); /* 28px = 21pt */
   --font-size-♯: 1rem * var(--φ); /* 28px = 21pt */
-  --line-height-♯: var(--line-height); /* 28px = 21pt */
+  --line-height-♯: var(--line-height-♮); /* 28px = 21pt */
   --font-size-♯♯: 1rem * var(--φ) * var(--φ); /* 45.4px = 34pt */
-  --line-height-♯♯: var(--line-height) * 2; /* 56px = 42pt */
+  --line-height-♯♯: var(--line-height-♮) * 2; /* 56px = 42pt */
   --font-size-♯♯♯: 1rem * var(--φ) * var(--φ) * var(--φ); /* 73.4px = 55pt */
-  --line-height-♯♯♯: var(--line-height) * 3; /* 84px = 63pt */
+  --line-height-♯♯♯: var(--line-height-♮) * 3; /* 84px = 63pt */
   --font-size-♯♯♯♯: 1rem * var(--φ) * var(--φ) * var(--φ) * var(--φ); /* 118.8px = 89pt */
-  --line-height-♯♯♯♯: var(--line-height) * 5; /* 140px = 105pt */
+  --line-height-♯♯♯♯: var(--line-height-♮) * 5; /* 140px = 105pt */
 }
 
 /*
@@ -108,7 +110,7 @@
 }
 
 .config｡vertical-rhythm > body {
-  line-height: calc(var(--line-height));
+  line-height: calc(var(--line-height-♮));
 }
 
 /*
@@ -211,6 +213,7 @@
 */
 
 .component｡visual｡tooltip {
+  visibility: hidden;
   position: relative;
   text-decoration: var(--component｡visual｡tooltip｡hint-decoration);
   text-decoration-skip: ink;
@@ -219,6 +222,7 @@
 
 .component｡visual｡tooltip::after {
   content: attr(title);
+  visibility: visible;
   position: absolute;
   z-index: 1;
   left: calc(100% + 3px);
@@ -241,7 +245,7 @@
 
 .component｡visual｡paper {
   position: relative;
-  margin: calc(var(--line-height)) auto;
+  margin: calc(var(--line-height-♮)) auto;
   width: var(--component｡visual｡paper｡width);
   background-color: white;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
@@ -279,6 +283,11 @@
   hyphens: auto;
 }
 
+#this small {
+  font-size: calc(var(--font-size-♭));
+  line-height: calc(var(--line-height-♭));
+}
+
 #this strong.component｡visual｡highlighter-underline,
 #this em.component｡visual｡highlighter-underline {
   --component｡visual｡highlighter-underline｡color: var(--palette-color-1);
@@ -304,7 +313,7 @@
   --component｡visual｡highlighter-sideline-left｡width: 6px;
   --component｡visual｡highlighter-sideline-left｡rise: 2px;
 
-  padding-left: calc(var(--line-height) / 2);
+  padding-left: calc(var(--line-height-♮) / 2);
 }
 
 #this dt.component｡visual｡highlighter-sideline-left:nth-of-type(even),
@@ -313,7 +322,7 @@
 }
 
 #this dt.component｡visual｡highlighter-sideline-left {
-  padding-top: calc(var(--line-height) / 2);
+  padding-top: calc(var(--line-height-♮) / 2);
 }
 
 #this li.component｡visual｡highlighter-sideline-left {
@@ -321,8 +330,8 @@
   --component｡visual｡highlighter-sideline-left｡width: 6px;
   --component｡visual｡highlighter-sideline-left｡rise: 2px;
 
-  margin-left: calc(-1 * var(--line-height) / 2 + var(--component｡visual｡highlighter-sideline-left｡width));
-  padding-left: calc(var(--line-height) - var(--component｡visual｡highlighter-sideline-left｡width));
+  margin-left: calc(-1 * var(--line-height-♮) / 2 + var(--component｡visual｡highlighter-sideline-left｡width));
+  padding-left: calc(var(--line-height-♮) - var(--component｡visual｡highlighter-sideline-left｡width));
 }
 
 #this li.component｡visual｡highlighter-sideline-left:nth-child(3n+2) {
@@ -334,14 +343,14 @@
 }
 
 #this li.component｡visual｡highlighter-sideline-left:last-child {
-  padding-bottom: calc(var(--line-height) / 2);
+  padding-bottom: calc(var(--line-height-♮) / 2);
 }
 
 #this .component｡visual｡tooltip {
   --component｡visual｡tooltip｡hint-decoration: underline var(--palette-color-1);
   --component｡visual｡tooltip｡tooltip-color: var(--palette-color-1);
   --component｡visual｡tooltip｡tooltip-background: var(--palette-color-6);
-  --component｡visual｡tooltip｡tooltip-font: 100 var(--font-size-♮)/calc(var(--line-height)) Alegreya Sans SC, sans-serif;
+  --component｡visual｡tooltip｡tooltip-font: 100 var(--font-size-♮)/calc(var(--line-height-♮)) Alegreya Sans SC, sans-serif;
 }
 
 #this .content｡typographical｡glyph-unavailable-in-alegreya {
@@ -382,13 +391,13 @@
 }
 
 #this⟦header⟧⟦heading⟧ {
-  left: calc(var(--line-height) * 2);
-  bottom: calc(var(--line-height) * 1.5);
+  left: calc(var(--line-height-♮) * 2);
+  bottom: calc(var(--line-height-♮) * 1.5);
 }
 
 #this⟦header⟧⟦subheading⟧ {
-  left: calc(var(--line-height) * 2);
-  bottom: calc(var(--line-height) * 0.5);
+  left: calc(var(--line-height-♮) * 2);
+  bottom: calc(var(--line-height-♮) * 0.5);
 }
 
 #this⟦header⟧⟦portraiture⟧ {
@@ -410,7 +419,7 @@
 
 #this⟦contact⟧ {
   grid-area: contact;
-  margin: 0 calc(var(--line-height) * 2) 0 0;
+  margin: 0 calc(var(--line-height-♮) * 2) 0 0;
 }
 
 /*
@@ -419,7 +428,7 @@
 
 #this⟦summary⟧ {
   grid-area: summary;
-  margin: calc(var(--line-height)) calc(var(--line-height)) 0 calc(var(--line-height) * 2);
+  margin: calc(var(--line-height-♮)) calc(var(--line-height-♮)) 0 calc(var(--line-height-♮) * 2);
 }
 
 /*
@@ -428,7 +437,7 @@
 
 #this⟦experience-major⟧ {
   grid-area: experience-major;
-  margin: 0 calc(var(--line-height) * 2);
+  margin: 0 calc(var(--line-height-♮) * 2);
 }
 
 #this⟦experience-major⟧ dt.component｡visual｡highlighter-sideline-left:first-of-type {
@@ -452,7 +461,7 @@
 
 #this⟦experience-minor⟧ {
   grid-area: experience-minor;
-  margin: 0 calc(var(--line-height)) 0 calc(var(--line-height) * 2);
+  margin: 0 calc(var(--line-height-♮)) 0 calc(var(--line-height-♮) * 2);
 }
 
 [id^=this⟦experience-minor⟧⟦job⟧] {
@@ -480,7 +489,7 @@
 
 #this⟦skillset⟧ {
   grid-area: skillset;
-  margin: calc(var(--line-height) / 2) calc(var(--line-height) * 2) 0 0;
+  margin: calc(var(--line-height-♮) / 2) calc(var(--line-height-♮) * 2) 0 0;
   font-weight: 100;
   text-align: right;
 }
@@ -495,13 +504,19 @@
 
 #this⟦languages⟧ {
   grid-area: languages;
-  margin: calc(var(--line-height)) calc(var(--line-height) * 2) 0 0;
+  margin: calc(var(--line-height-♮)) calc(var(--line-height-♮) * 2) 0 0;
   font-weight: 100;
   text-align: right;
 }
 
 #this⟦languages⟧ > * {
   border-left: 1px solid var(--palette-color-1);
+}
+
+[id^=this⟦languages⟧⟦test⟧] {
+  display: block;
+  font-family: Alegreya Sans SC, sans-serif;
+  font-weight: 300;
 }
 
 /*
