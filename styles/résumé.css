@@ -169,6 +169,7 @@
 .component｡visual｡highlighter-underline::after {
   content: "";
   position: absolute;
+  right: calc(-1 * var(--component｡visual｡highlighter-underline｡run));
   bottom: calc(-1 * var(--component｡visual｡highlighter-underline｡height) / 2);
   width: 0;
   height: 0;
@@ -491,6 +492,21 @@
   --component｡visual｡highlighter-sideline-left｡rise: 4px;
 
   transform: translate3d(3px, -2px, 0);
+}
+
+[id^=this⟦speeches⟧⟦event⟧] {
+  font-weight: normal;
+}
+
+[id^=this⟦speeches⟧⟦date⟧],
+[id^=this⟦speeches⟧⟦location⟧] {
+  font-family: Alegreya Sans SC, sans-serif;
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+#this⟦speeches⟧ .component｡structural｡tags {
+  display: flex;
 }
 
 /*
