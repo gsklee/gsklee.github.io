@@ -213,7 +213,6 @@
 */
 
 .component｡visual｡tooltip {
-  visibility: hidden;
   position: relative;
   text-decoration: var(--component｡visual｡tooltip｡hint-decoration);
   text-decoration-skip: ink;
@@ -222,7 +221,7 @@
 
 .component｡visual｡tooltip::after {
   content: attr(title);
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   z-index: 1;
   left: calc(100% + 3px);
@@ -235,6 +234,7 @@
 }
 
 .component｡visual｡tooltip:hover::after {
+  visibility: visible;
   opacity: 1;
 }
 
