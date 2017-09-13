@@ -321,8 +321,8 @@
 
 #this li.component｡visual｡highlighter-strikethrough {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-1);
-  --component｡visual｡highlighter-underline｡height: 50%;
-  --component｡visual｡highlighter-underline｡run: 2px;
+  --component｡visual｡highlighter-strikethrough｡height: 50%;
+  --component｡visual｡highlighter-strikethrough｡run: 2px;
 
   margin: 0 2px;
   font-family: Alegreya Sans SC, sans-serif;
