@@ -549,6 +549,10 @@
   display: flex;
 }
 
+#this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough {
+  padding: 0 calc(var(--component｡visual｡highlighter-sideline-left｡run) / 2);
+}
+
 #this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough:nth-child(2n+1) {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-2);
 }
@@ -557,9 +561,13 @@
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-6);
   --component｡visual｡highlighter-sideline-left｡width: 6px;
 
-  margin-left: calc(-1 * var(--line-height-♮) - var(--component｡visual｡highlighter-sideline-left｡width) / 2);
-  padding-left: calc(var(--line-height-♮) - var(--component｡visual｡highlighter-sideline-left｡width) / 2);
+  margin-left: calc(-1 * (var(--line-height-♮) / 2 - var(--component｡visual｡highlighter-sideline-left｡width) / 2));
+  padding-left: calc(var(--line-height-♮) / 2 - var(--component｡visual｡highlighter-sideline-left｡width) / 2);
   color: var(--palette-color-1);
+}
+
+#this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough a.component｡visual｡highlighter-underline:hover {
+  --component｡visual｡highlighter-underline｡height: 0px;
 }
 
 /*
