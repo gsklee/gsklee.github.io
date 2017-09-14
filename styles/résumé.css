@@ -550,7 +550,7 @@
 }
 
 #this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough {
-  padding: 0 calc(var(--component｡visual｡highlighter-sideline-left｡run) / 2);
+  padding: 0 calc(var(--component｡visual｡highlighter-sideline-left｡width) / 2);
 }
 
 #this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough:nth-child(2n+1) {
