@@ -388,7 +388,7 @@
   --component｡visual｡tooltip｡hint-decoration: underline var(--palette-color-1);
   --component｡visual｡tooltip｡tooltip-color: var(--palette-color-1);
   --component｡visual｡tooltip｡tooltip-background: var(--palette-color-6);
-  --component｡visual｡tooltip｡tooltip-font: 100 var(--font-size-♮)/calc(var(--line-height-♮)) Alegreya Sans SC, sans-serif;
+  --component｡visual｡tooltip｡tooltip-font: 100 100%/calc(var(--line-height-♮)) Alegreya Sans SC, sans-serif;
 }
 
 #this .content｡typographical｡glyph-unavailable-in-alegreya {
