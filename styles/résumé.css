@@ -456,10 +456,12 @@
 #this⟦contact⟧ {
   grid-area: contact;
   margin: calc(var(--line-height-♮) / 4) 0 0 0;
+  text-align: right;
 }
 
 #this⟦contact⟧ li.component｡visual｡highlighter-strikethrough {
   margin-right: 0;
+  padding-right: calc(var(--line-height-♮) / 2);
 }
 
 #this⟦contact⟧ li.component｡visual｡highlighter-strikethrough::after {
