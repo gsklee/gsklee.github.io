@@ -482,7 +482,7 @@
   padding-top: 0;
 }
 
-[id^=this⟦experience-major⟧⟦job⟧] {
+[id^=this⟦experience-major⟧⟦position⟧] {
   font-weight: normal;
 }
 
@@ -506,7 +506,7 @@
   margin: 0 calc(var(--line-height-♮)) 0 calc(var(--line-height-♮) * 2);
 }
 
-[id^=this⟦experience-minor⟧⟦job⟧] {
+[id^=this⟦experience-minor⟧⟦position⟧] {
   font-weight: normal;
 }
 
@@ -532,10 +532,8 @@
 
 #this⟦speeches⟧ > h1.component｡visual｡highlighter-sideline-left {
   --component｡visual｡highlighter-sideline-left｡color: white;
-  --component｡visual｡highlighter-sideline-left｡width: 12px;
-  --component｡visual｡highlighter-sideline-left｡rise: 4px;
-
-  transform: translate3d(3px, -2px, 0);
+  --component｡visual｡highlighter-sideline-left｡width: 18px;
+  --component｡visual｡highlighter-sideline-left｡rise: 6px;
 }
 
 #this⟦speeches⟧ dt.component｡visual｡highlighter-sideline-left:first-child {
@@ -637,6 +635,17 @@
   padding-bottom: calc(var(--line-height-♮) / 2);
 }
 
+[id^=this⟦organizations⟧⟦position⟧] {
+  font-weight: normal;
+}
+
+[id^=this⟦organizations⟧⟦timespan⟧],
+[id^=this⟦organizations⟧⟦location⟧] {
+  font-family: Alegreya Sans SC, sans-serif;
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
 /*
 // #this⟦education⟧
 */
@@ -657,7 +666,19 @@
 }
 
 #this⟦education⟧ dd.component｡visual｡highlighter-sideline-left {
+  margin-bottom: calc(var(--line-height-♮) * 1.5);
   padding-bottom: calc(var(--line-height-♮) / 2);
+}
+
+[id^=this⟦education⟧⟦degree⟧] {
+  font-weight: normal;
+}
+
+[id^=this⟦education⟧⟦timespan⟧],
+[id^=this⟦education⟧⟦location⟧] {
+  font-family: Alegreya Sans SC, sans-serif;
+  font-weight: 100;
+  text-transform: lowercase;
 }
 
 /*
