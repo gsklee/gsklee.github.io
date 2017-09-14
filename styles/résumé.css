@@ -542,7 +542,7 @@
   padding-top: 0;
 }
 
-#this⟦speeches⟧ dd.component｡visual｡highlighter-sideline-left:last-child {
+#this⟦speeches⟧ dd.component｡visual｡highlighter-sideline-left {
   padding-bottom: calc(var(--line-height-♮) / 2);
 }
 
