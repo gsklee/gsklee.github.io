@@ -620,15 +620,13 @@
 
 #this⟦organizations⟧ {
   grid-area: organizations;
-  margin: calc(-1 * var(--line-height-♮) / 2) calc(var(--line-height-♮)) 0 calc(var(--line-height-♮) * 2);
-  }
+  margin: calc(-1 * var(--line-height-♮) / 2) calc(var(--line-height-♮) * 2) 0;
+}
 
 #this⟦organizations⟧ > h1.component｡visual｡highlighter-sideline-left {
   --component｡visual｡highlighter-sideline-left｡color: white;
-  --component｡visual｡highlighter-sideline-left｡width: 12px;
-  --component｡visual｡highlighter-sideline-left｡rise: 4px;
-
-  transform: translate3d(3px, -2px, 0);
+  --component｡visual｡highlighter-sideline-left｡width: 18px;
+  --component｡visual｡highlighter-sideline-left｡rise: 6px;
 }
 
 /*
@@ -637,6 +635,13 @@
 
 #this⟦education⟧ {
   grid-area: education;
+  margin: calc(-1 * var(--line-height-♮) / 2) calc(var(--line-height-♮) * 2) 0;
+}
+
+#this⟦education⟧ > h1.component｡visual｡highlighter-sideline-left {
+  --component｡visual｡highlighter-sideline-left｡color: white;
+  --component｡visual｡highlighter-sideline-left｡width: 18px;
+  --component｡visual｡highlighter-sideline-left｡rise: 6px;
 }
 
 /*
