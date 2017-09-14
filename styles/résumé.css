@@ -455,31 +455,63 @@
 
 #this⟦contact⟧ {
   grid-area: contact;
-  margin: 0 calc(var(--line-height-♮) * 2) 0 0;
+  margin: calc(var(--line-height-♮) / 4) 0 0 0;
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough {
+  margin-right: 0;
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough::after {
+  display: none;
 }
 
 #this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(1) {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-1);
 }
 
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(1) a {
+  --component｡visual｡highlighter-underline｡color: var(--palette-color-6);
+}
+
 #this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(2) {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-2);
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(2) a {
+  --component｡visual｡highlighter-underline｡color: var(--palette-color-5);
 }
 
 #this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(3) {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-3);
 }
 
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(3) a {
+  --component｡visual｡highlighter-underline｡color: var(--palette-color-4);
+}
+
 #this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(4) {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-4);
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(4) a {
+  --component｡visual｡highlighter-underline｡color: var(--palette-color-3);
 }
 
 #this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(5) {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-5);
 }
 
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(5) a {
+  --component｡visual｡highlighter-underline｡color: var(--palette-color-2);
+}
+
 #this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(6) {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-6);
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(6) a {
+  --component｡visual｡highlighter-underline｡color: var(--palette-color-1);
 }
 
 /*
