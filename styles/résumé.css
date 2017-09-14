@@ -151,6 +151,7 @@
 
 .component｡visual｡highlighter-strikethrough {
   position: relative;
+  margin: 0 calc(var(--component｡visual｡highlighter-strikethrough｡run) / 2);
   background: linear-gradient(0deg, var(--component｡visual｡highlighter-strikethrough｡color) 0%, var(--component｡visual｡highlighter-strikethrough｡color) 100%) center/100% var(--component｡visual｡highlighter-strikethrough｡height) no-repeat;
 }
 
@@ -323,10 +324,9 @@
 
 #this li.component｡visual｡highlighter-strikethrough {
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-1);
-  --component｡visual｡highlighter-strikethrough｡height: 14px;
-  --component｡visual｡highlighter-strikethrough｡run: 2px;
+  --component｡visual｡highlighter-strikethrough｡height: 18px;
+  --component｡visual｡highlighter-strikethrough｡run: 6px;
 
-  margin: 0 2px;
   font-family: Alegreya Sans SC, sans-serif;
 }
 
@@ -547,6 +547,19 @@
 
 #this⟦speeches⟧ .component｡structural｡tags {
   display: flex;
+}
+
+#this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough:nth-child(2n+1) {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-2);
+}
+
+#this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough:first-child {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-6);
+  --component｡visual｡highlighter-sideline-left｡width: 6px;
+
+  margin-left: calc(-1 * var(--line-height-♮) - var(--component｡visual｡highlighter-sideline-left｡width) / 2);
+  padding-left: 11px;
+  color: var(--palette-color-1);
 }
 
 /*
