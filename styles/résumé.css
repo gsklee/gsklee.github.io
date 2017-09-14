@@ -482,7 +482,7 @@
   margin: 0 calc(var(--line-height-♮) * 2);
 }
 
-#this⟦experience-major⟧ dt.component｡visual｡highlighter-sideline-left:first-of-type {
+#this⟦experience-major⟧ dt.component｡visual｡highlighter-sideline-left:first-child {
   padding-top: 0;
 }
 
@@ -532,6 +532,10 @@
   --component｡visual｡highlighter-sideline-left｡rise: 4px;
 
   transform: translate3d(3px, -2px, 0);
+}
+
+#this⟦speeches⟧ dt.component｡visual｡highlighter-sideline-left:first-child {
+  padding-top: 0;
 }
 
 [id^=this⟦speeches⟧⟦event⟧] {
