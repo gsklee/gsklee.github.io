@@ -629,6 +629,10 @@
   --component｡visual｡highlighter-sideline-left｡rise: 6px;
 }
 
+#this⟦organizations⟧ dt.component｡visual｡highlighter-sideline-left:first-child {
+  padding-top: 0;
+}
+
 /*
 // #this⟦education⟧
 */
@@ -642,6 +646,10 @@
   --component｡visual｡highlighter-sideline-left｡color: white;
   --component｡visual｡highlighter-sideline-left｡width: 18px;
   --component｡visual｡highlighter-sideline-left｡rise: 6px;
+}
+
+#this⟦education⟧ dt.component｡visual｡highlighter-sideline-left:first-child {
+  padding-top: 0;
 }
 
 /*
