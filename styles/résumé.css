@@ -326,8 +326,6 @@
   --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-1);
   --component｡visual｡highlighter-strikethrough｡height: 18px;
   --component｡visual｡highlighter-strikethrough｡run: 6px;
-
-  font-family: Alegreya Sans SC, sans-serif;
 }
 
 #this strong.component｡visual｡highlighter-underline,
@@ -460,6 +458,30 @@
   margin: 0 calc(var(--line-height-♮) * 2) 0 0;
 }
 
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(1) {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-1);
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(2) {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-2);
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(3) {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-3);
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(4) {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-4);
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(5) {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-5);
+}
+
+#this⟦contact⟧ li.component｡visual｡highlighter-strikethrough:nth-child(6) {
+  --component｡visual｡highlighter-strikethrough｡color: var(--palette-color-6);
+}
+
 /*
 // #this⟦summary⟧
 */
@@ -561,6 +583,7 @@
 
 #this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough {
   padding: 0 calc(var(--component｡visual｡highlighter-sideline-left｡width) / 2);
+  font-family: Alegreya Sans SC, sans-serif;
 }
 
 #this⟦speeches⟧ li.component｡visual｡highlighter-strikethrough:nth-child(2n+1) {
