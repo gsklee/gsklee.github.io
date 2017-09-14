@@ -456,6 +456,7 @@
 #this⟦contact⟧ {
   grid-area: contact;
   margin: calc(var(--line-height-♮) / 4) 0 0 0;
+  height: 0;
   text-align: right;
 }
 
