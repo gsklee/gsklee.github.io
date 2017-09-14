@@ -633,6 +633,10 @@
   padding-top: 0;
 }
 
+#this⟦organizations⟧ dd.component｡visual｡highlighter-sideline-left {
+  padding-bottom: calc(var(--line-height-♮) / 2);
+}
+
 /*
 // #this⟦education⟧
 */
@@ -650,6 +654,10 @@
 
 #this⟦education⟧ dt.component｡visual｡highlighter-sideline-left:first-child {
   padding-top: 0;
+}
+
+#this⟦education⟧ dd.component｡visual｡highlighter-sideline-left {
+  padding-bottom: calc(var(--line-height-♮) / 2);
 }
 
 /*
