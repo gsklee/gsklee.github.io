@@ -724,8 +724,12 @@
 }
 
 #this⟦education⟧ dd.component｡visual｡highlighter-sideline-left {
-  margin-bottom: calc(var(--line-height-♮) * 1.5);
   padding-bottom: calc(var(--line-height-♮) / 2);
+}
+
+#this⟦education⟧ dd.component｡visual｡highlighter-sideline-left:last-of-type {
+  margin-bottom: calc(var(--line-height-♮));
+  padding-bottom: 0;
 }
 
 [id^=this⟦education⟧⟦degree⟧] {
