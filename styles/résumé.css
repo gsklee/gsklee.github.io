@@ -60,6 +60,14 @@
   padding: 0;
 }
 
+@media (hover: hover) {
+  .config｡normalization *,
+  .config｡normalization ::before,
+  .config｡normalization ::after {
+    transition: 0.25s;
+  }
+}
+
 .config｡normalization a {
   color: inherit;
   text-decoration: none;
