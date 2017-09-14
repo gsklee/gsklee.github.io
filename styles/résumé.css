@@ -58,7 +58,6 @@
 .config｡normalization ::after {
   margin: 0;
   padding: 0;
-  transition: 0.25s;
 }
 
 .config｡normalization a {
