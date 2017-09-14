@@ -558,7 +558,7 @@
   --component｡visual｡highlighter-sideline-left｡width: 6px;
 
   margin-left: calc(-1 * var(--line-height-♮) - var(--component｡visual｡highlighter-sideline-left｡width) / 2);
-  padding-left: 11px;
+  padding-left: calc(var(--line-height-♮) - var(--component｡visual｡highlighter-sideline-left｡width) / 2);
   color: var(--palette-color-1);
 }
 
